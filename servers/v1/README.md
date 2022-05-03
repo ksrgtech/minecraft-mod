@@ -2,6 +2,10 @@
 platform: forge
 GomiServer v2の構成をベースにしたmodpack
 
+## environments
+* Java 8
+* [Forge 1.12.2](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.12.2.html) #2859
+
 ## mods
 |Name|Version|License|Included in Repo?|
 |:---:|:---:|:---:|:---:|
