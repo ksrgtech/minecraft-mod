@@ -15,6 +15,7 @@ GomiServer v2の構成をベースにしたmodpack
 |BetterFps|1.4.8|<!-- License -->|<!-- Included? -->|
 |BibilioCraft|2.4.6-1.12.2|<!-- License -->|<!-- Included? -->|
 |BiomeTweaker|1.12.2-3.2.369|<!-- License -->|<!-- Included? -->|
+|Biomes O' Plenty|[1.12.2-7.0.1.2445](https://www.curseforge.com/minecraft/mc-mods/biomes-o-plenty/files/3558882)|All Rights Reserved|❌|
 |Bookshelf|1.12.2-2.3.590|<!-- License -->|<!-- Included? -->|
 |BrandonsCore|1.12.2-2.4.20.162-universal|<!-- License -->|<!-- Included? -->|
 |Chameleon|1.12-4.1.3|<!-- License -->|<!-- Included? -->|
