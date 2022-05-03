@@ -4,3 +4,4 @@
 * [Pam's HarvestCraft](https://www.curseforge.com/minecraft/mc-mods/pams-harvestcraft)([Patreon](https://www.patreon.com/pamsmods)) by Pamela Collins (MatrexsVigil) and Rhodox
 * [RailCraft](https://www.curseforge.com/minecraft/mc-mods/railcraft) - [Blog](https://railcraft.info/) - [Wiki](https://railcraft.info/wiki) - [License](https://railcraft.info/wiki/info:license)
 * [Realistic Terrain Generation](https://www.curseforge.com/minecraft/mc-mods/realistic-terrain-generation) by [their contributors](https://github.com/Team-RTG/Realistic-Terrain-Generation/graphs/contributors)
+  * This pack uses forked version, which was added Sakura's biome support by KisaragiEffective
