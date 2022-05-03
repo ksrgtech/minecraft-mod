@@ -9,6 +9,7 @@ GomiServer v2の構成をベースにしたmodpack
 ## mods
 |Name|Version|License|Included in Repo?|
 |:---:|:---:|:---:|:---:|
+|Aroma1997|[1.12.2-2.0.0.2](https://www.curseforge.com/minecraft/mc-mods/aroma1997s-dimensional-world/files/2672438)|[Custom License](https://www.curseforge.com/project/60092/license)|⭕|
 |AppleSkin|[1.12-1.0.14](https://www.curseforge.com/minecraft/mc-mods/appleskin/files/2987247)|Public Domain|⭕|
 |AutoRegLib|[1.3-32](https://www.curseforge.com/minecraft/mc-mods/autoreglib/files/2746011)|[Botania+Psi+Quark+WTFPL](https://github.com/VazkiiMods/AutoRegLib/blob/1.12/README.md)|⭕|
 |Avaritia|[1.12.2-3.3.0.37-universal](https://www.curseforge.com/minecraft/mc-mods/avaritia-1-10/files/3143349)|All Rights Reserved|❌|
