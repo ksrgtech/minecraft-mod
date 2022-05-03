@@ -1,0 +1,2 @@
+# minecraft-mod
+mod configurations
