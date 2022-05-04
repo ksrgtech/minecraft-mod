@@ -42,7 +42,7 @@ GomiServer v2の構成をベースにしたmodpack
 |Geographicraft|[1.12-0.89b](https://www.curseforge.com/minecraft/mc-mods/climate-control-geographicraft/files/2497541)|LGPLv3|⭕|
 |Hwyla|[1.8.26-B41_1.12.2](https://www.curseforge.com/minecraft/mc-mods/hwyla/files/2568751)|CC BY-NC-SA 4.0|⭕|
 |IntegrationForgoing|[1.12.2-1.11](https://www.curseforge.com/minecraft/mc-mods/integration-foregoing/files/3200529)|Jacky's License|⭕|
-|InventoryTweaks|1.64+dev.146\[?\]|MIT|⭕|
+|InventoryTweaks|[1.64+dev.151](https://www.curseforge.com/minecraft/mc-mods/inventory-tweaks/files/2923460)|MIT|⭕|
 |Immersive Engineering|[0.12-98](https://www.curseforge.com/minecraft/mc-mods/immersive-engineering/files/2974106)|Custom License [inclusion: allow]|⭕|
 |JustEnoughResources|[1.12.2-0.9.2.60](https://www.curseforge.com/minecraft/mc-mods/just-enough-resources-jer/files/2728585)|[Custom License](https://www.curseforge.com/project/240630/license)|⭕|
 |JustEnoughCalculation|[1.12.2-3.2.7](https://www.curseforge.com/minecraft/mc-mods/just-enough-calculation/files/3524685)|GPLv3|⭕|
