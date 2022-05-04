@@ -102,6 +102,7 @@ GomiServer v2の構成をベースにしたmodpack
 
 ### client only
 |[OptiFine](https://optifine.net)|1.12.2_HD_U_G5|All Rights Reserved|❌|
+|[controlling](https://www.curseforge.com/minecraft/mc-mods/controlling)|[3.0.10](https://www.curseforge.com/minecraft/mc-mods/controlling/files/3025548)|MIT|⭕|
 
 ### server only
 
