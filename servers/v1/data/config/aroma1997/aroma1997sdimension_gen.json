@@ -52,15 +52,6 @@
 		"targetBlock": "minecraft:water"
 	},
 	{
-		"type": "oreReplace",
-		"identifier": "removeDiamonds",
-		"enabled": false,
-		"targetBlock": "minecraft:stone",
-		"originalBlock": [
-			"minecraft:diamond_ore"
-		]
-	},
-	{
 		"type": "grass",
 		"identifier": "grass",
 		"enabled": false
@@ -82,6 +73,15 @@
 			"minecraft:dirt",
 			"minecraft:grass",
 			"minecraft:gravel"
+		]
+	},
+	{
+		"type": "oreReplace",
+		"identifier": "removeDiamonds",
+		"enabled": false,
+		"targetBlock": "minecraft:stone",
+		"originalBlock": [
+			"minecraft:diamond_ore"
 		]
 	}
 ]
