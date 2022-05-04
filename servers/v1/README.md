@@ -33,6 +33,7 @@ GomiServer v2の構成をベースにしたmodpack
 |DarkUtils|[1.12.2-1.8.230](https://www.curseforge.com/minecraft/mc-mods/dark-utilities/files/2813586)|LGPL 2.1|⭕|
 |Draconic-Additions|[1.12.2-1.17.0.45-universal](https://www.curseforge.com/minecraft/mc-mods/draconicadditions/files/3514704)|["Don't be a Jerk"](https://www.curseforge.com/project/314515/license)|⭕|
 |Draconic-Evolution|[1.12.2-2.3.28.354-universal](https://www.curseforge.com/minecraft/mc-mods/draconic-evolution/files/3431261)|["Don't be a Jerk"](https://www.curseforge.com/project/223565/license)|⭕|
+|EnderCore|[1.12.2-0.5.76](https://www.curseforge.com/minecraft/mc-mods/endercore/files/2972849)|Public Domain|⭕|
 |EnderStorage|[1.12.2-2.4.6.137-universal](https://www.curseforge.com/minecraft/mc-mods/ender-storage-1-8/files/2755787)|MIT|⭕|
 |EnderIO|[1.12.2-5.3.70](https://www.curseforge.com/minecraft/mc-mods/ender-io/files/3328811)|Public Domain|⭕|
 |FarmingForBlockheads|[1.12.2-3.1.28](https://www.curseforge.com/minecraft/mc-mods/farming-for-blockheads/files/2733508)|[Custom license\[allows modpack\]](https://github.com/ModdingForBlockheads/FarmingForBlockheads/blob/634f76d41fba4a27d4ae65b761175ac33d2ac4eb/LICENSE)<br>or [MIT](https://github.com/ModdingForBlockheads/CookingForBlockheads/blob/31221d904b8ce24899eb51160ce58efbe13bf028/LICENSE)|⭕|
