@@ -53,7 +53,7 @@ function curse_dl() {
       -r \
       --arg curse $CURSE_API_KEY \
       --arg dir $MOD_DIR \
-      '.data[] | {fileId: .id, modId, fileName} | ("curl -qf -H \"Accept: application/json\" -H \u0027x-api-key: " + $curse + "\u0027 " + "https://api.curseforge.com/v1/mods/" + (.modId | tostring) + "/files/" + (.fileId | tostring) + "/download-url" + " | " + "jq -r \u0027.data\u0027" + " | " + "tr -d \u0027\\n\u0027" + " | " + "xargs -0 -i wget {} -O \"" + $dir + "/" + .fileName + "\"")' \
+      '.data[] | {fileId: .id, modId, fileName} | ("curl -qf -H \"Accept: application/json\" -H \u0027x-api-key: " + $curse + "\u0027 " + "https://api.curseforge.com/v1/mods/" + (.modId | tostring) + "/files/" + (.fileId | tostring) + "/download-url" + " | " + "jq -r \u0027.data\u0027" + " | " + "tr -d \u0027\\n\u0027" + " | " + "xargs -P -0 -i wget {} -O \"" + $dir + "/" + .fileName + "\"")' \
     | tee "$x" >/dev/null # Yeah, this is a security risk
   chmod +x "$x"
   # syntax validation
@@ -77,3 +77,9 @@ dl "https://www.dropbox.com/sh/mlfsx6b3z5ek8wv/AACCf_0tDiPo8fd2rwa0CoEia/SpawnCh
 dl "https://web.archive.org/web/20190715131820/https://forum.minecraftuser.jp/download/file.php?id=75930" "StorageBox-3.2.0"
 dl "https://github.com/KisaragiEffective/publicfile/blob/master/RTG-1.12.2-6.1.0.0-snapshot.2+flavored.ksrg.git-b7769d2dc6d0941922a26090dd1c15328eb4d1d0?raw=true" "RTG-1.12.2-6.1.0.0-snapshot.2+flavored.ksrg.git-b7769d2dc6d0941922a26090dd1c15328eb4d1d0"
 curse_dl
+
+if [[ "$CLIENT" == "1" ]]; then
+  [ -d "client" ] && cp client/* run
+elif [[ "$SERVER" == "1" ]]; then
+  [ -d "server" ] && cp server/* run
+fi
