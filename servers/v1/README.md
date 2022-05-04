@@ -7,6 +7,7 @@ GomiServer v2の構成をベースにしたmodpack
 * [Forge 1.12.2](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.12.2.html) #2859
 
 ## mods
+### common
 |Name|Version|License|Included in Repo?|
 |:---:|:---:|:---:|:---:|
 |Aroma1997|[1.12.2-2.0.0.2](https://www.curseforge.com/minecraft/mc-mods/aroma1997s-dimensional-world/files/2672438)|[Custom License](https://www.curseforge.com/project/60092/license)|⭕|
@@ -33,6 +34,7 @@ GomiServer v2の構成をベースにしたmodpack
 |Draconic-Additions|[1.12.2-1.17.0.45-universal](https://www.curseforge.com/minecraft/mc-mods/draconicadditions/files/3514704)|["Don't be a Jerk"](https://www.curseforge.com/project/314515/license)|⭕|
 |Draconic-Evolution|[1.12.2-2.3.28.354-universal](https://www.curseforge.com/minecraft/mc-mods/draconic-evolution/files/3431261)|["Don't be a Jerk"](https://www.curseforge.com/project/223565/license)|⭕|
 |EnderStorage|[1.12.2-2.4.6.137-universal](https://www.curseforge.com/minecraft/mc-mods/ender-storage-1-8/files/2755787)|MIT|⭕|
+|EnderIO|[1.12.2-5.3.70](https://www.curseforge.com/minecraft/mc-mods/ender-io/files/3328811)|Public Domain|⭕|
 |FarmingForBlockheads|[1.12.2-3.1.28](https://www.curseforge.com/minecraft/mc-mods/farming-for-blockheads/files/2733508)|[Custom license\[allows modpack\]](https://github.com/ModdingForBlockheads/FarmingForBlockheads/blob/634f76d41fba4a27d4ae65b761175ac33d2ac4eb/LICENSE)<br>or [MIT](https://github.com/ModdingForBlockheads/CookingForBlockheads/blob/31221d904b8ce24899eb51160ce58efbe13bf028/LICENSE)|⭕|
 |FastFurnace|[1.12.2-1.3.1](https://www.curseforge.com/minecraft/mc-mods/fastfurnace/files/2706111)|MIT|⭕|
 |FastLeafDecay|[v14](https://www.curseforge.com/minecraft/mc-mods/fast-leaf-decay/files/2463272)|[All Rights Reserved\[allows modpack\]](https://github.com/Olafski/FastLeafDecay/blob/0737c0a8751930a639121c2e4981621fc332f9c4/README.md)|⭕|
@@ -59,7 +61,6 @@ GomiServer v2の構成をベースにしたmodpack
 |Neat|[1.4-17](https://www.curseforge.com/minecraft/mc-mods/neat/files/2595310)|CC BY-NC-SA 3.0 Unported|⭕|
 |OpenBlocks|[1.12.2-1.8.1](https://www.curseforge.com/minecraft/mc-mods/openblocks/files/2699056)|MIT|⭕|
 |OpenModsLib|[1.12.2-0.12.2](https://www.curseforge.com/minecraft/mc-mods/openmodslib/files/2699055)|MIT|⭕|
-|[OptiFine](https://optifine.net)|1.12.2_HD_U_G5|All Rights Reserved|❌|
 |Pam's HarvestCraft|[1.12.2zg](https://www.curseforge.com/minecraft/mc-mods/pams-harvestcraft/files/2904825)|Custom License [redist: allowed]|⭕|
 |Patchouli|[1.0-23.6](https://www.curseforge.com/minecraft/mc-mods/patchouli/files/3162874)|CC BY-NC-SA 3.0 Unported|⭕|
 |Perfect Spawn|[1.12.2-2.1](https://www.curseforge.com/minecraft/mc-mods/perfect-spawn/files/2543507)|LGPLv3|⭕|
@@ -99,3 +100,12 @@ GomiServer v2の構成をベースにしたmodpack
 |torchmaster_1.12.2|[1.8.5.0](https://www.curseforge.com/minecraft/mc-mods/torchmaster/files/3529742)|MIT|⭕|
 |twilightforest|[1.12.2-3.11.1021-universal](https://www.curseforge.com/minecraft/mc-mods/the-twilight-forest/files/3051450)|LGPL 2.1|⭕|
 |unloader|[1.2.0](https://www.curseforge.com/minecraft/mc-mods/unloader/files/2572528)|MIT|⭕|
+
+### client only
+|[OptiFine](https://optifine.net)|1.12.2_HD_U_G5|All Rights Reserved|❌|
+|[controlling](https://www.curseforge.com/minecraft/mc-mods/controlling)|[3.0.10](https://www.curseforge.com/minecraft/mc-mods/controlling/files/3025548)|MIT|⭕|
+
+### server only
+
+|[Xaero's Minimap](https://www.curseforge.com/minecraft/mc-mods/xaeros-minimap)|[22.7.0](https://www.curseforge.com/minecraft/mc-mods/xaeros-minimap/files/3778428)|Custom License [inclusion: allowed]|⭕|
+|[Xaero's World Map](https://www.curseforge.com/minecraft/mc-mods/controlling/files)|[1.21.1](https://www.curseforge.com/minecraft/mc-mods/xaeros-world-map/files/3779536)|Custom License [inclusion: allowed]|⭕|
