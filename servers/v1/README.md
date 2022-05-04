@@ -62,6 +62,7 @@ GomiServer v2の構成をベースにしたmodpack
 |[OptiFine](https://optifine.net)|1.12.2_HD_U_G5|All Rights Reserved|❌|
 |Pam's HarvestCraft|[1.12.2zg](https://www.curseforge.com/minecraft/mc-mods/pams-harvestcraft/files/2904825)|Custom License [redist: allowed]|⭕|
 |Patchouli|[1.0-23.6](https://www.curseforge.com/minecraft/mc-mods/patchouli/files/3162874)|CC BY-NC-SA 3.0 Unported|⭕|
+|Perfect Spawn|[1.12.2-2.1](https://www.curseforge.com/minecraft/mc-mods/perfect-spawn/files/2543507)|LGPLv3|⭕|
 |PotionFingers|[r1.0-2](https://www.curseforge.com/minecraft/mc-mods/potion-fingers/files/2491881)|WTFPL|⭕|
 |Quark|[r1.6-179](https://www.curseforge.com/minecraft/mc-mods/quark/files/2924091)|CC BY-NC-SA 3.0 Unported|⭕|
 |RandomThings|[1.12.2-4.2.7.4](https://www.curseforge.com/minecraft/mc-mods/random-things/files/2905241)|MIT|⭕|
