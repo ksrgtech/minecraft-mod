@@ -65,11 +65,12 @@ jobs:
       # Runs a single command using the runners shell
       - name: pack and copy
         run: |
+          echo $GITHUB_WORKSPACE
           ls $GITHUB_WORKSPACE
-          cd $GITHUB_WORKSPACE/toolkit/server/v1
-          ./download.sh
-          ./pack.sh
-          cp packed.zip $GITHUB_WORKSPACE/dest
+          (cd toolkit/server/v1 &&
+          ./download.sh &&
+          ./pack.sh &&
+          cp packed.zip $GITHUB_WORKSPACE/dest)
       # Runs a set of commands using the runners shell
       - name: commit
         run: |
