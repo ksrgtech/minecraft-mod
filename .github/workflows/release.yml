@@ -58,8 +58,9 @@ jobs:
       - name: checkout dest repo
         uses: actions/checkout@v3
         with:
-          repository: ${{ secrets.DESTINATION_REPOSITORY }}
+          repository: ${{ secrets.DEST_USER }}/${{ secrets.DEST_REPO }}
           path: dest
+          token: ${{ secrets.DEST_PAT }}
 
       # Runs a single command using the runners shell
       - name: pack and copy
@@ -73,7 +74,7 @@ jobs:
         run: |
           cd $GITHUB_WORKSPACE/dest
           git commit -m "$(TZ='Asia/Tokyo' date +%Y-%m-%d_%H.%M.%S) update"
-          git push "https://github-actions:${{ secrets.PAT }}@github.com/repo.git"
+          git push "https://${{ secrets.DEST_USER }}:${{ secrets.DEST_PAT }}@github.com/${{ secrets.DEST_REPO }}.git"
 
 
 
