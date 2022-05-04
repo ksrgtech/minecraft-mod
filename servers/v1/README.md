@@ -7,6 +7,7 @@ GomiServer v2の構成をベースにしたmodpack
 * [Forge 1.12.2](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.12.2.html) #2859
 
 ## mods
+### common
 |Name|Version|License|Included in Repo?|
 |:---:|:---:|:---:|:---:|
 |Aroma1997|[1.12.2-2.0.0.2](https://www.curseforge.com/minecraft/mc-mods/aroma1997s-dimensional-world/files/2672438)|[Custom License](https://www.curseforge.com/project/60092/license)|⭕|
@@ -59,7 +60,6 @@ GomiServer v2の構成をベースにしたmodpack
 |Neat|[1.4-17](https://www.curseforge.com/minecraft/mc-mods/neat/files/2595310)|CC BY-NC-SA 3.0 Unported|⭕|
 |OpenBlocks|[1.12.2-1.8.1](https://www.curseforge.com/minecraft/mc-mods/openblocks/files/2699056)|MIT|⭕|
 |OpenModsLib|[1.12.2-0.12.2](https://www.curseforge.com/minecraft/mc-mods/openmodslib/files/2699055)|MIT|⭕|
-|[OptiFine](https://optifine.net)|1.12.2_HD_U_G5|All Rights Reserved|❌|
 |Pam's HarvestCraft|[1.12.2zg](https://www.curseforge.com/minecraft/mc-mods/pams-harvestcraft/files/2904825)|Custom License [redist: allowed]|⭕|
 |Patchouli|[1.0-23.6](https://www.curseforge.com/minecraft/mc-mods/patchouli/files/3162874)|CC BY-NC-SA 3.0 Unported|⭕|
 |Perfect Spawn|[1.12.2-2.1](https://www.curseforge.com/minecraft/mc-mods/perfect-spawn/files/2543507)|LGPLv3|⭕|
@@ -99,3 +99,11 @@ GomiServer v2の構成をベースにしたmodpack
 |torchmaster_1.12.2|[1.8.5.0](https://www.curseforge.com/minecraft/mc-mods/torchmaster/files/3529742)|MIT|⭕|
 |twilightforest|[1.12.2-3.11.1021-universal](https://www.curseforge.com/minecraft/mc-mods/the-twilight-forest/files/3051450)|LGPL 2.1|⭕|
 |unloader|[1.2.0](https://www.curseforge.com/minecraft/mc-mods/unloader/files/2572528)|MIT|⭕|
+
+### client only
+|[OptiFine](https://optifine.net)|1.12.2_HD_U_G5|All Rights Reserved|❌|
+
+### server only
+
+|[Xaero's Minimap](https://www.curseforge.com/minecraft/mc-mods/xaeros-minimap)|[22.7.0](https://www.curseforge.com/minecraft/mc-mods/xaeros-minimap/files/3778428)|Custom License [inclusion: allowed]|⭕|
+|[Xaero's World Map](https://www.curseforge.com/minecraft/mc-mods/controlling/files)|[1.21.1](https://www.curseforge.com/minecraft/mc-mods/xaeros-world-map/files/3779536)|Custom License [inclusion: allowed]|⭕|
