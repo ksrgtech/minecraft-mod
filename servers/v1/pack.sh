@@ -1,7 +1,8 @@
 #!/bin/bash
 wd=$(mktemp -d)
+cp -r data/common/* $wd/
 cp -r run/mods $wd/mods
-cp -r data/config $wd/config
+
 if [[ "x$DETAILED_NAME" == "x" ]]; then
   file_name="packed.zip"
 else
