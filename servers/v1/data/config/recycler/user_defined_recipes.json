@@ -1,0 +1,10 @@
+[
+  {
+    "inputItem": "recycler:recycler:1:0",
+    "outputItems": [
+      "minecraft:planks:4:0",
+      "minecraft:iron_ingot:4:0",
+      "minecraft:chest"
+    ]
+  }
+]
