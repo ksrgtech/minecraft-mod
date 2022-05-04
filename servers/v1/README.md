@@ -65,7 +65,7 @@ GomiServer v2の構成をベースにしたmodpack
 |PotionFingers|[r1.0-2](https://www.curseforge.com/minecraft/mc-mods/potion-fingers/files/2491881)|WTFPL|⭕|
 |Quark|[r1.6-179](https://www.curseforge.com/minecraft/mc-mods/quark/files/2924091)|CC BY-NC-SA 3.0 Unported|⭕|
 |RandomThings|[1.12.2-4.2.7.4](https://www.curseforge.com/minecraft/mc-mods/random-things/files/2905241)|MIT|⭕|
-|Realistic Terrain Generator|Now preparing: 1.12.2-6.1.0.0-snapshot.1+flavored.ksrg.git-b7769d2dc6d0941922a26090dd1c15328eb4d1d0|GPLv3|⭕|
+|Realistic Terrain Generator|[1.12.2-6.1.0.0-snapshot.2+flavored.ksrg.git-b7769d2dc6d0941922a26090dd1c15328eb4d1d0](https://github.com/KisaragiEffective/publicfile/blob/master/RTG-1.12.2-6.1.0.0-snapshot.2+flavored.ksrg.git-b7769d2dc6d0941922a26090dd1c15328eb4d1d0?raw=true)|GPLv3|⭕|
 |RedstoneFlux|[1.12-2.1.1.1-universal](https://www.curseforge.com/minecraft/mc-mods/redstone-flux/files/2920436)|All Rights Reserved|❌|
 |Sakura|[1.0.8-1.12.2+flavored.ksrg.3](https://github.com/KisaragiEffective/Sakura_mod/releases/tag/1.0.8-1.12.2%2Bflavored.ksrg.3)|MIT|⭕|
 |SpawnChecker|[2.7.7.137](https://www.dropbox.com/sh/mlfsx6b3z5ek8wv/AACCf_0tDiPo8fd2rwa0CoEia/SpawnChecker/Minecraft_1.12.x/SpawnChecker-2.7.7.137.jar?dl=1)|All Rights Reserved|❌|
