@@ -65,7 +65,7 @@ jobs:
       # Runs a single command using the runners shell
       - name: pack and copy
         run: |
-          cd $GITHUB_WORKSPACE/toolkit/server/v1
+          cd /home/github/minecraft-mod/toolkit/server/v1
           ./download.sh
           ./pack.sh
           cp packed.zip ../../../dest
