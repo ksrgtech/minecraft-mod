@@ -11,7 +11,7 @@ Note: pack distribution is not public, however you can play same combination.
 
 ### common
 |Name|Version|License|
-|:---:|:---:|:---:|
+|:---|:---|:---|
 |Aroma1997|[1.12.2-2.0.0.2](https://www.curseforge.com/minecraft/mc-mods/aroma1997s-dimensional-world/files/2672438)|[Custom License](https://www.curseforge.com/project/60092/license)|
 |Aroma1997Core|[1.12.2-2.0.0.2](https://www.curseforge.com/minecraft/mc-mods/aroma1997core/files/2676866)|GPLv3|
 |AppleSkin|[1.12-1.0.14](https://www.curseforge.com/minecraft/mc-mods/appleskin/files/2987247)|Public Domain|
@@ -105,10 +105,13 @@ Note: pack distribution is not public, however you can play same combination.
 |unloader|[1.2.0](https://www.curseforge.com/minecraft/mc-mods/unloader/files/2572528)|MIT|
 
 ### client only
+|Name|Version|License|
+|:---|:---|:---|
 |[OptiFine](https://optifine.net)|1.12.2_HD_U_G5|All Rights Reserved|
 |[controlling](https://www.curseforge.com/minecraft/mc-mods/controlling)|[3.0.10](https://www.curseforge.com/minecraft/mc-mods/controlling/files/3025548)|MIT|
 
 ### server only
-
+|Name|Version|License|
+|:---|:---|:---|
 |[Xaero's Minimap](https://www.curseforge.com/minecraft/mc-mods/xaeros-minimap)|[22.7.0](https://www.curseforge.com/minecraft/mc-mods/xaeros-minimap/files/3778428)|Custom License [inclusion: allowed]|
 |[Xaero's World Map](https://www.curseforge.com/minecraft/mc-mods/controlling/files)|[1.21.1](https://www.curseforge.com/minecraft/mc-mods/xaeros-world-map/files/3779536)|Custom License [inclusion: allowed]|
