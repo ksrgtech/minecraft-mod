@@ -10,6 +10,7 @@ GomiServer v2の構成をベースにしたmodpack
 |Name|Version|License|Included in Repo?|
 |:---:|:---:|:---:|:---:|
 |Aroma1997|[1.12.2-2.0.0.2](https://www.curseforge.com/minecraft/mc-mods/aroma1997s-dimensional-world/files/2672438)|[Custom License](https://www.curseforge.com/project/60092/license)|⭕|
+|Aroma1997Core|[1.12.2-2.0.0.2](https://www.curseforge.com/minecraft/mc-mods/aroma1997core/files/2676866)|GPLv3|⭕|
 |AppleSkin|[1.12-1.0.14](https://www.curseforge.com/minecraft/mc-mods/appleskin/files/2987247)|Public Domain|⭕|
 |AutoRegLib|[1.3-32](https://www.curseforge.com/minecraft/mc-mods/autoreglib/files/2746011)|[Botania+Psi+Quark+WTFPL](https://github.com/VazkiiMods/AutoRegLib/blob/1.12/README.md)|⭕|
 |Avaritia|[1.12.2-3.3.0.37-universal](https://www.curseforge.com/minecraft/mc-mods/avaritia-1-10/files/3143349)|All Rights Reserved|❌|
@@ -36,12 +37,14 @@ GomiServer v2の構成をベースにしたmodpack
 |FastFurnace|[1.12.2-1.3.1](https://www.curseforge.com/minecraft/mc-mods/fastfurnace/files/2706111)|MIT|⭕|
 |FastLeafDecay|[v14](https://www.curseforge.com/minecraft/mc-mods/fast-leaf-decay/files/2463272)|[All Rights Reserved\[allows modpack\]](https://github.com/Olafski/FastLeafDecay/blob/0737c0a8751930a639121c2e4981621fc332f9c4/README.md)|⭕|
 |Forgelin|[1.8.4](https://www.curseforge.com/minecraft/mc-mods/shadowfacts-forgelin/files/2785465)|LGPL 2.1|⭕|
-|FpsReducer|[1.12.2-1.20](https://www.curseforge.com/minecraft/mc-mods/fps-reducer)|All Rights Reserved|❌|
+|FpsReducer|[1.12.2-1.20](https://www.curseforge.com/minecraft/mc-mods/fps-reducer/files/3362160)|All Rights Reserved|❌|
 |[GunpowderLib](https://www.curseforge.com/minecraft/mc-mods/gunpowderlib)|[1.12.2-1.1](https://www.curseforge.com/minecraft/mc-mods/gunpowderlib/files/3168863)|[Jacky's License](https://github.com/JackyyTV/GunpowderLib/blob/e2a532d65814bc0a84e3f07d364581991f85a9eb/LICENSE.md)|⭕|
+|Geographicraft|[1.12-0.89b](https://www.curseforge.com/minecraft/mc-mods/climate-control-geographicraft/files/2497541)|LGPLv3|⭕|
 |Hwyla|[1.8.26-B41_1.12.2](https://www.curseforge.com/minecraft/mc-mods/hwyla/files/2568751)|CC BY-NC-SA 4.0|⭕|
 |IntegrationForgoing|[1.12.2-1.11](https://www.curseforge.com/minecraft/mc-mods/integration-foregoing/files/3200529)|Jacky's License|⭕|
 |InventoryTweaks|1.64+dev.146\[?\]|MIT|⭕|
 |JustEnoughResources|[1.12.2-0.9.2.60](https://www.curseforge.com/minecraft/mc-mods/just-enough-resources-jer/files/2728585)|[Custom License](https://www.curseforge.com/project/240630/license)|⭕|
+|JustEnoughCalculation|[1.12.2-3.2.7](https://www.curseforge.com/minecraft/mc-mods/just-enough-calculation/files/3524685)|GPLv3|⭕|
 |LagGoggles|[1.12.2-5.8-132](https://www.curseforge.com/minecraft/mc-mods/laggoggles/files/2947622)|GPLv3|⭕|
 |MMLib|[2.3.0](https://www.curseforge.com/minecraft/mc-mods/mysterious-mountain-lib/files/3254750)|MIT|⭕|
 |Mantle|[1.12-1.3.3.55](https://www.curseforge.com/minecraft/mc-mods/mantle/files/2713386)|MIT|⭕|
