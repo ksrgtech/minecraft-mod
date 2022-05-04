@@ -7,6 +7,21 @@ function die() {
   exit 1
 }
 
+function pre_execute() {
+  rm -r $MOD_DIR || true
+  mkdir -p $MOD_DIR
+  [ -z "$DIR" ] && die "\$DIR can not be empty"
+  [ ! -d "$DIR" ] && mkdir -p "$DIR"
+  [[ "$SERVER" == "" && "$CLIENT" == "" ]] && die "You must specify \$SERVER or \$CLIENT"
+  [[ "$SERVER" == "1" && "$CLIENT" == "1" ]] && die "You must not specify both \$SERVER and \$CLIENT"
+
+  if [ -z "$CURSE_API_KEY" ]; then
+    die "CFCore token must be provided via \$CURSE_API_KEY. Please get it from https://console.curseforge.com"
+  else
+    echo "CFCore token is provided"
+  fi
+}
+
 function dl() {
   URL="$1"
   FILE="$2"
@@ -50,21 +65,9 @@ function curse_dl() {
 }
 
 DIR=run
-
-[ -z "$DIR" ] && die "\$DIR can not be empty"
-[ ! -d "$DIR" ] && mkdir -p "$DIR"
-[[ "$SERVER" == "" && "$CLIENT" == "" ]] && die "You must specify \$SERVER or \$CLIENT"
-[[ "$SERVER" == "1" && "$CLIENT" == "1" ]] && die "You must not specify both \$SERVER and \$CLIENT"
-
-if [ -z "$CURSE_API_KEY" ]; then
-  die "CFCore token must be provided via \$CURSE_API_KEY"
-else
-  echo "Yeah"
-fi
-
 MOD_DIR=$DIR/mods
-rm -r $MOD_DIR || true
-mkdir -p $MOD_DIR
+
+pre_execute
 
 if [[ "$CLIENT" == "1" ]]; then
   dl "https://optifine.net/downloadx?f=OptiFine_1.12.2_HD_U_G5.jar&x=79875e46fbbc1166cb1d14b96c5a684a" "OptiFine_1.12.2_HD_U_G5"
