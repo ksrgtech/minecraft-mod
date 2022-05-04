@@ -43,6 +43,7 @@ GomiServer v2の構成をベースにしたmodpack
 |Hwyla|[1.8.26-B41_1.12.2](https://www.curseforge.com/minecraft/mc-mods/hwyla/files/2568751)|CC BY-NC-SA 4.0|⭕|
 |IntegrationForgoing|[1.12.2-1.11](https://www.curseforge.com/minecraft/mc-mods/integration-foregoing/files/3200529)|Jacky's License|⭕|
 |InventoryTweaks|1.64+dev.146\[?\]|MIT|⭕|
+|Immersive Engineering|[0.12-98](https://www.curseforge.com/minecraft/mc-mods/immersive-engineering/files/2974106)|Custom License [inclusion: allow]|⭕|
 |JustEnoughResources|[1.12.2-0.9.2.60](https://www.curseforge.com/minecraft/mc-mods/just-enough-resources-jer/files/2728585)|[Custom License](https://www.curseforge.com/project/240630/license)|⭕|
 |JustEnoughCalculation|[1.12.2-3.2.7](https://www.curseforge.com/minecraft/mc-mods/just-enough-calculation/files/3524685)|GPLv3|⭕|
 |LagGoggles|[1.12.2-5.8-132](https://www.curseforge.com/minecraft/mc-mods/laggoggles/files/2947622)|GPLv3|⭕|
@@ -87,7 +88,6 @@ GomiServer v2の構成をベースにしたmodpack
 |jei|[1.12.2-4.16.1.302](https://www.curseforge.com/minecraft/mc-mods/jei/files/3043174)|MIT|⭕|
 |jeiintegration|[1.12.2-1.6.0](https://www.curseforge.com/minecraft/mc-mods/jei-integration/files/2951731)|MIT|⭕|
 |journeymap|[1.12.2-5.7.1](https://www.curseforge.com/minecraft/mc-mods/journeymap/files/2916002)|All Rights Reserved|❌|
-|railcraft|[12.0.0](https://www.curseforge.com/minecraft/mc-mods/railcraft/files/2687757)|[License](https://railcraft.info/wiki/info:license)|⭕|
 |reauth|[3.6.0](https://www.curseforge.com/minecraft/mc-mods/reauth/files/2560638)|[Custom License](https://www.curseforge.com/minecraft/mc-mods/reauth)|⭕|
 |[recycler](https://www.curseforge.com/minecraft/mc-mods/corail-recycler)|[3.2.4-1.12](https://www.curseforge.com/minecraft/mc-mods/corail-recycler/files/2753557)|Custom License [inclusion: allowed]|⭕|
 |sit|[1.12.2-v1.3](https://www.curseforge.com/minecraft/mc-mods/sit/files/2848862)|GPLv3|⭕|
