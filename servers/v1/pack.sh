@@ -1,6 +1,6 @@
 #!/bin/bash
 wd=$(mktemp -d)
-cp -r data/common/* $wd/
+cp -r run/config $wd/config
 cp -r run/mods $wd/mods
 
 if [[ "x$DETAILED_NAME" == "x" ]]; then
