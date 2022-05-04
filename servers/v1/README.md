@@ -74,11 +74,12 @@ GomiServer v2の構成をベースにしたmodpack
 |TickCentral|[3.2](https://www.curseforge.com/minecraft/mc-mods/tickcentral/files/3140670)|GPLv3|⭕|
 |TofuCraftReload|[0.1.0.9](https://www.curseforge.com/minecraft/mc-mods/tofucraftreload/files/3115668)|MIT|⭕|
 |WailaHarvestability|[1.12-1.1.12](https://www.curseforge.com/minecraft/mc-mods/waila-harvestability/files/2481605)|Public Domain|⭕|
-|WanionLib|[1.12.2-2.5](https://www.curseforge.com/minecraft/mc-mods/wanionlib/files/3064112)|MPL 2.0|⭕|
+|WanionLib|[1.12.2-2.9](https://www.curseforge.com/minecraft/mc-mods/wanionlib/files/3597087)|MPL 2.0|⭕|
 |Wawla|[1.12.2-2.6.275](https://www.curseforge.com/minecraft/mc-mods/wawla/files/2916368)|LGPL 2.1|⭕|
 |YARCF|[0.14-1.12.2](https://www.curseforge.com/minecraft/mc-mods/yarcf/files/3310627)|GPLv3|⭕|
 |Applied Energistics 2|[rv5-stable-1](https://www.curseforge.com/minecraft/mc-mods/applied-energistics-2/files/2497056)|LGPLv3|⭕|
 |Bad Wither No Cookie - Reloaded|[1.12.2-3.3.16](https://www.curseforge.com/minecraft/mc-mods/bad-wither-no-cookie-reloaded/files/2638317)|MIT|⭕|
+|Brandon's Core|[1.12.2-2.4.20.162](https://www.curseforge.com/minecraft/mc-mods/brandons-core/files/3408276)|Don't Be a Jerk|⭕|
 |compactmachines3|[1.12.2-3.0.18-b278](https://www.curseforge.com/minecraft/mc-mods/compact-machines/files/2707509)|LGPLv3|⭕|
 |extrautils2|[1.12-1.9.9](https://www.curseforge.com/minecraft/mc-mods/extra-utilities/files/2678374)|All Rights Reserved|❌|
 |ftb-ultimine|[1202.3.5](https://www.curseforge.com/minecraft/mc-mods/ftb-ultimine-forge/files/3078750)|All Rights Reserved|❌|
