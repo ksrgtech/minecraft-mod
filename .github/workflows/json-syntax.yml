@@ -5,7 +5,8 @@ on:
     paths:
       - '**.json'
   pull_request:
-
+    paths:
+      - '**.json'
 jobs:
   test:
     runs-on: ubuntu-latest
