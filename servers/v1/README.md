@@ -21,15 +21,16 @@ Note: pack distribution is not public, however you can play same combination.
 |Avaritiaddons|[1.12.2-1.3](https://www.curseforge.com/minecraft/mc-mods/avaritiaddons/files/3662188)|MPL 2.0|
 |Baublelicious|[1.4.0-4](https://www.curseforge.com/minecraft/mc-mods/baublelicious/files/2532880)|All Rights Reserved|
 |Baubles|[1.12-1.5.2](https://www.curseforge.com/minecraft/mc-mods/baubles/files/2518667)|CC BY-NC-SA 3.0|
+|[BetterBlockGen](https://www.curseforge.com/minecraft/mc-mods/betterbedrockgen/files)|[1.12-6.1.1](https://www.curseforge.com/minecraft/mc-mods/betterbedrockgen/files/2458763)|AGPLv3|
 |[BetterFps](https://www.curseforge.com/minecraft/mc-mods/betterfps)|[1.4.8](https://www.curseforge.com/minecraft/mc-mods/betterfps/files/2483393)|LGPL 2.1|
 |BibilioCraft|[2.4.6-1.12.2](https://www.curseforge.com/minecraft/mc-mods/bibliocraft/files/3647708)|All Rights Reserved|
 |BiomeTweaker|[1.12.2-3.2.369](https://www.curseforge.com/minecraft/mc-mods/biometweaker/files/3112142)|[MMPLv2](https://github.com/superckl/BiomeTweaker/blob/961bed5f03b5e8fcea7d2743e1fad16b9766eba5/LICENSE.md)|
 |Biomes O' Plenty|[1.12.2-7.0.1.2445](https://www.curseforge.com/minecraft/mc-mods/biomes-o-plenty/files/3558882)|All Rights Reserved|
 |Bookshelf|[1.12.2-2.3.590](https://www.curseforge.com/minecraft/mc-mods/bookshelf/files/2836960)|[LGPL 2.1](https://github.com/Darkhax-Minecraft/Bookshelf/blob/c920f1c4e23803295feca81f0f619e7fc70ebec9/License.md)|
-|BrandonsCore|1.12.2-2.4.20.162-universal|[Custom license \[allows modpack\]](https://www.curseforge.com/project/231382/license)|
+|Brandon's Core|[1.12.2-2.4.20.162](https://www.curseforge.com/minecraft/mc-mods/brandons-core/files/3408276)|[Custom license \[allows modpack\]](https://www.curseforge.com/project/231382/license)|
 |Chameleon|[1.12-4.1.3](https://www.curseforge.com/minecraft/mc-mods/chameleon/files/2450900)|MIT|
 |CodeChickenLib|[1.12.2-3.2.3.358-universal](https://www.curseforge.com/minecraft/mc-mods/codechicken-lib-1-8/files/2779848)|LGPL 2.1|
-|CookingForBlockheads|1.12.2-6.5.0|[Custom license\[allows modpack\]](https://github.com/ModdingForBlockheads/CookingForBlockheads/blob/416279fbc54b72e2e286002caa43779e1d4362fc/LICENSE)<br>or [MIT](https://github.com/ModdingForBlockheads/CookingForBlockheads/blob/31221d904b8ce24899eb51160ce58efbe13bf028/LICENSE)|
+|CookingForBlockheads|[1.12.2-6.5.0](https://www.curseforge.com/minecraft/mc-mods/cooking-for-blockheads/files/2862651)|[Custom license\[allows modpack\]](https://github.com/ModdingForBlockheads/CookingForBlockheads/blob/416279fbc54b72e2e286002caa43779e1d4362fc/LICENSE)<br>or [MIT](https://github.com/ModdingForBlockheads/CookingForBlockheads/blob/31221d904b8ce24899eb51160ce58efbe13bf028/LICENSE)|
 |Cucumber|[1.12.2-1.1.3](https://www.curseforge.com/minecraft/mc-mods/cucumber/files/2645867)|MIT|
 |Cyclic|[1.12.2-1.20.12](https://www.curseforge.com/minecraft/mc-mods/cyclic/files/3722420)|[MIT](https://github.com/Lothrazar/Cyclic/blob/ebaa99f9d1f0cdf716245ef2227e9af60a94780d/LICENSE.txt)|
 |DarkUtils|[1.12.2-1.8.230](https://www.curseforge.com/minecraft/mc-mods/dark-utilities/files/2813586)|LGPL 2.1|
@@ -46,6 +47,8 @@ Note: pack distribution is not public, however you can play same combination.
 |[GunpowderLib](https://www.curseforge.com/minecraft/mc-mods/gunpowderlib)|[1.12.2-1.1](https://www.curseforge.com/minecraft/mc-mods/gunpowderlib/files/3168863)|[Jacky's License](https://github.com/JackyyTV/GunpowderLib/blob/e2a532d65814bc0a84e3f07d364581991f85a9eb/LICENSE.md)|
 |Geographicraft|[1.12-0.89b](https://www.curseforge.com/minecraft/mc-mods/climate-control-geographicraft/files/2497541)|LGPLv3|
 |Hwyla|[1.8.26-B41_1.12.2](https://www.curseforge.com/minecraft/mc-mods/hwyla/files/2568751)|CC BY-NC-SA 4.0|
+|Integrated Dynamics|[1.12.2-1.1.11](https://www.curseforge.com/minecraft/mc-mods/integrated-dynamics/files/3159505)|MIT|
+|Integrated Tunnels|[1.12.2-1.6.14](https://www.curseforge.com/minecraft/mc-mods/integrated-tunnels/files/3159511)|MIT|
 |IntegrationForgoing|[1.12.2-1.11](https://www.curseforge.com/minecraft/mc-mods/integration-foregoing/files/3200529)|Jacky's License|
 |InventoryTweaks|[1.64+dev.151](https://www.curseforge.com/minecraft/mc-mods/inventory-tweaks/files/2923460)|MIT|
 |Immersive Engineering|[0.12-98](https://www.curseforge.com/minecraft/mc-mods/immersive-engineering/files/2974106)|Custom License [inclusion: allow]|
@@ -72,7 +75,7 @@ Note: pack distribution is not public, however you can play same combination.
 |RandomThings|[1.12.2-4.2.7.4](https://www.curseforge.com/minecraft/mc-mods/random-things/files/2905241)|MIT|
 |Realistic Terrain Generator|[1.12.2-6.1.0.0-snapshot.2+flavored.ksrg.git-b7769d2dc6d0941922a26090dd1c15328eb4d1d0](https://github.com/KisaragiEffective/publicfile/blob/master/RTG-1.12.2-6.1.0.0-snapshot.2+flavored.ksrg.git-b7769d2dc6d0941922a26090dd1c15328eb4d1d0?raw=true)|GPLv3|
 |RedstoneFlux|[1.12-2.1.1.1-universal](https://www.curseforge.com/minecraft/mc-mods/redstone-flux/files/2920436)|All Rights Reserved|
-|Sakura|[1.0.8-1.12.2+flavored.ksrg.3](https://github.com/KisaragiEffective/Sakura_mod/releases/tag/1.0.8-1.12.2%2Bflavored.ksrg.3)|MIT|
+|Sakura|[1.0.8-1.12.2+flavored.ksrg.4](https://github.com/KisaragiEffective/Sakura_mod/releases/tag/1.0.8-1.12.2%2Bflavored.ksrg.4)|MIT|
 |SpawnChecker|[2.7.7.137](https://www.dropbox.com/sh/mlfsx6b3z5ek8wv/AACCf_0tDiPo8fd2rwa0CoEia/SpawnChecker/Minecraft_1.12.x/SpawnChecker-2.7.7.137.jar?dl=1)|All Rights Reserved|
 |StorageBox|[3.2.0](https://web.archive.org/web/20190715131820/https://forum.minecraftuser.jp/download/file.php?id=75930)|All Rights Reserved?|
 |StorageDrawers|[1.12.2-5.4.2](https://www.curseforge.com/minecraft/mc-mods/storage-drawers/files/2952606)|MIT|
@@ -84,7 +87,6 @@ Note: pack distribution is not public, however you can play same combination.
 |YARCF|[0.14-1.12.2](https://www.curseforge.com/minecraft/mc-mods/yarcf/files/3310627)|GPLv3|
 |Applied Energistics 2|[rv5-stable-1](https://www.curseforge.com/minecraft/mc-mods/applied-energistics-2/files/2497056)|LGPLv3|
 |Bad Wither No Cookie - Reloaded|[1.12.2-3.3.16](https://www.curseforge.com/minecraft/mc-mods/bad-wither-no-cookie-reloaded/files/2638317)|MIT|
-|Brandon's Core|[1.12.2-2.4.20.162](https://www.curseforge.com/minecraft/mc-mods/brandons-core/files/3408276)|Don't Be a Jerk|
 |compactmachines3|[1.12.2-3.0.18-b278](https://www.curseforge.com/minecraft/mc-mods/compact-machines/files/2707509)|LGPLv3|
 |extrautils2|[1.12-1.9.9](https://www.curseforge.com/minecraft/mc-mods/extra-utilities/files/2678374)|All Rights Reserved|
 |ftb-ultimine|[1202.3.5](https://www.curseforge.com/minecraft/mc-mods/ftb-ultimine-forge/files/3078750)|All Rights Reserved|
