@@ -3,7 +3,7 @@
 
 set -x
 function die() {
-  echo "$*"
+  echo "$(tput setab 1)$(tput setaf 15)$*$(tput init)"
   exit 1
 }
 
@@ -31,6 +31,8 @@ function dl() {
 
 function curse_dl() {
   set -e
+  local x
+  x=$(mktemp)
   local file
   if [[ "$SERVER" == "1" ]]; then
     file="cf_mods_server.json"
@@ -39,8 +41,6 @@ function curse_dl() {
   fi
   # ✝✝✝!!!META-PROGRAMMING!!!✝✝✝
   # shellcheck disable=SC2016
-  local res
-  res=$(mktemp)
   curl \
       -q \
       -X POST \
@@ -48,25 +48,13 @@ function curse_dl() {
       -H "Content-Type: application/json" \
       -H "x-api-key: $CURSE_API_KEY" \
       -d@$file \
-      https://api.curseforge.com/v1/mods/files > $res
-
-  local content_type
-  content_type="$(file "$res" | tr -d "\n")"
-  # workaround for HTTP 504 from Cloudflare
-  if [[ "$content_type" != "/dev/stdin: JSON data" ]]; then
-    die "unexpected content type: $content_type. This could be a Cloudflare-layer problem. Please try later. HTTP response body: $(cat "$res")"
-  fi
-
-  local x
-  x=$(mktemp)
-
-  jq \
-    -r \
-    --arg curse $CURSE_API_KEY \
-    --arg dir $MOD_DIR \
-    '.data[] | {fileId: .id, modId, fileName} | ("curl -qf -H \"Accept: application/json\" -H \u0027x-api-key: " + $curse + "\u0027 " + "https://api.curseforge.com/v1/mods/" + (.modId | tostring) + "/files/" + (.fileId | tostring) + "/download-url" + " | " + "jq -r \u0027.data\u0027" + " | " + "tr -d \u0027\\n\u0027" + " | " + "xargs -P -0 -i wget {} -O \"" + $dir + "/" + .fileName + "\"")' \
-    $res \
-  | tee "$x" >/dev/null # Yeah, this is a security risk
+      https://api.curseforge.com/v1/mods/files \
+    | jq \
+      -r \
+      --arg curse $CURSE_API_KEY \
+      --arg dir $MOD_DIR \
+      '.data[] | {fileId: .id, modId, fileName} | ("curl -qf -H \"Accept: application/json\" -H \u0027x-api-key: " + $curse + "\u0027 " + "https://api.curseforge.com/v1/mods/" + (.modId | tostring) + "/files/" + (.fileId | tostring) + "/download-url" + " | " + "jq -r \u0027.data\u0027" + " | " + "tr -d \u0027\\n\u0027" + " | " + "xargs -P -0 -i wget {} -O \"" + $dir + "/" + .fileName + "\"")' \
+    | tee "$x" >/dev/null # Yeah, this is a security risk
   chmod +x "$x"
   # syntax validation
   /bin/bash -n "$x"
@@ -81,19 +69,18 @@ MOD_DIR=$DIR/mods
 
 pre_execute
 
-if [[ "$CLIENT" == "1" ]]; then
-  dl "https://optifine.net/downloadx?f=OptiFine_1.12.2_HD_U_G5.jar&x=79875e46fbbc1166cb1d14b96c5a684a" "OptiFine_1.12.2_HD_U_G5"
-fi
+# NOTE: OptiFine is not auto-installable.
 
 if [[ "$SERVER" == "1" ]]; then
   # see #23
-  dl "https://repo.spongepowered.org/repository/maven-releases/org/spongepowered/spongeforge/1.12.2-2838-7.4.7/spongeforge-1.12.2-2838-7.4.7.jar" "spongeforge-1.12.2-2838-7.4.7.jar"
+  dl "https://repo.spongepowered.org/repository/maven-releases/org/spongepowered/spongeforge/1.12.2-2838-7.4.7/spongeforge-1.12.2-2838-7.4.7.jar" "spongeforge-1.12.2-2838-7.4.7"
 fi
 
 dl "https://www.dropbox.com/sh/mlfsx6b3z5ek8wv/AACCf_0tDiPo8fd2rwa0CoEia/SpawnChecker/Minecraft_1.12.x/SpawnChecker-2.7.7.137.jar?dl=1" "SpawnChecker-2.7.7.137"
 dl "https://web.archive.org/web/20190715131820/https://forum.minecraftuser.jp/download/file.php?id=75930" "StorageBox-3.2.0"
 dl "https://github.com/KisaragiEffective/publicfile/blob/master/RTG-1.12.2-6.1.0.0-snapshot.2+flavored.ksrg.git-b7769d2dc6d0941922a26090dd1c15328eb4d1d0?raw=true" "RTG-1.12.2-6.1.0.0-snapshot.2+flavored.ksrg.git-b7769d2dc6d0941922a26090dd1c15328eb4d1d0"
-dl "https://github.com/KisaragiEffective/Sakura_mod/releases/download/1.0.8-1.12.2%2Bflavored.ksrg.4/Sakura-1.0.8-1.12.2+flavored.ksrg.4.jar" "Sakura-1.0.8-1.12.2+flavored.ksrg.4.jar"
+dl "https://github.com/KisaragiEffective/Sakura_mod/releases/download/1.0.8-1.12.2%2Bflavored.ksrg.4/Sakura-1.0.8-1.12.2+flavored.ksrg.4.jar" "Sakura-1.0.8-1.12.2+flavored.ksrg.4"
+
 curse_dl
 
 if [[ "$CLIENT" == "1" ]]; then
