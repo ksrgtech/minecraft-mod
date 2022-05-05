@@ -72,7 +72,7 @@ Note: pack distribution is not public, however you can play same combination.
 |RandomThings|[1.12.2-4.2.7.4](https://www.curseforge.com/minecraft/mc-mods/random-things/files/2905241)|MIT|
 |Realistic Terrain Generator|[1.12.2-6.1.0.0-snapshot.2+flavored.ksrg.git-b7769d2dc6d0941922a26090dd1c15328eb4d1d0](https://github.com/KisaragiEffective/publicfile/blob/master/RTG-1.12.2-6.1.0.0-snapshot.2+flavored.ksrg.git-b7769d2dc6d0941922a26090dd1c15328eb4d1d0?raw=true)|GPLv3|
 |RedstoneFlux|[1.12-2.1.1.1-universal](https://www.curseforge.com/minecraft/mc-mods/redstone-flux/files/2920436)|All Rights Reserved|
-|Sakura|[1.0.8-1.12.2+flavored.ksrg.3](https://github.com/KisaragiEffective/Sakura_mod/releases/tag/1.0.8-1.12.2%2Bflavored.ksrg.3)|MIT|
+|Sakura|[1.0.8-1.12.2+flavored.ksrg.4](https://github.com/KisaragiEffective/Sakura_mod/releases/tag/1.0.8-1.12.2%2Bflavored.ksrg.4)|MIT|
 |SpawnChecker|[2.7.7.137](https://www.dropbox.com/sh/mlfsx6b3z5ek8wv/AACCf_0tDiPo8fd2rwa0CoEia/SpawnChecker/Minecraft_1.12.x/SpawnChecker-2.7.7.137.jar?dl=1)|All Rights Reserved|
 |StorageBox|[3.2.0](https://web.archive.org/web/20190715131820/https://forum.minecraftuser.jp/download/file.php?id=75930)|All Rights Reserved?|
 |StorageDrawers|[1.12.2-5.4.2](https://www.curseforge.com/minecraft/mc-mods/storage-drawers/files/2952606)|MIT|
