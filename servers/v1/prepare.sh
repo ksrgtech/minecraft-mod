@@ -31,8 +31,6 @@ function dl() {
 
 function curse_dl() {
   set -e
-  local x
-  x=$(mktemp)
   local file
   if [[ "$SERVER" == "1" ]]; then
     file="cf_mods_server.json"
@@ -41,6 +39,8 @@ function curse_dl() {
   fi
   # ✝✝✝!!!META-PROGRAMMING!!!✝✝✝
   # shellcheck disable=SC2016
+  local res
+  res=$(mktemp)
   curl \
       -q \
       -X POST \
@@ -48,13 +48,25 @@ function curse_dl() {
       -H "Content-Type: application/json" \
       -H "x-api-key: $CURSE_API_KEY" \
       -d@$file \
-      https://api.curseforge.com/v1/mods/files \
-    | jq \
-      -r \
-      --arg curse $CURSE_API_KEY \
-      --arg dir $MOD_DIR \
-      '.data[] | {fileId: .id, modId, fileName} | ("curl -qf -H \"Accept: application/json\" -H \u0027x-api-key: " + $curse + "\u0027 " + "https://api.curseforge.com/v1/mods/" + (.modId | tostring) + "/files/" + (.fileId | tostring) + "/download-url" + " | " + "jq -r \u0027.data\u0027" + " | " + "tr -d \u0027\\n\u0027" + " | " + "xargs -P -0 -i wget {} -O \"" + $dir + "/" + .fileName + "\"")' \
-    | tee "$x" >/dev/null # Yeah, this is a security risk
+      https://api.curseforge.com/v1/mods/files > $res
+
+  local content_type
+  content_type="$(file "$res" | tr -d "\n")"
+  # workaround for HTTP 504 from Cloudflare
+  if [[ "$content_type" != "/dev/stdin: JSON data" ]]; then
+    die "unexpected content type: $content_type. This could be a Cloudflare-layer problem. Please try later. HTTP response body: $(cat "$res")"
+  fi
+
+  local x
+  x=$(mktemp)
+
+  jq \
+    -r \
+    --arg curse $CURSE_API_KEY \
+    --arg dir $MOD_DIR \
+    '.data[] | {fileId: .id, modId, fileName} | ("curl -qf -H \"Accept: application/json\" -H \u0027x-api-key: " + $curse + "\u0027 " + "https://api.curseforge.com/v1/mods/" + (.modId | tostring) + "/files/" + (.fileId | tostring) + "/download-url" + " | " + "jq -r \u0027.data\u0027" + " | " + "tr -d \u0027\\n\u0027" + " | " + "xargs -P -0 -i wget {} -O \"" + $dir + "/" + .fileName + "\"")' \
+    $res \
+  | tee "$x" >/dev/null # Yeah, this is a security risk
   chmod +x "$x"
   # syntax validation
   /bin/bash -n "$x"
