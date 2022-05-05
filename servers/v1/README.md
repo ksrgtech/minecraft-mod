@@ -26,7 +26,7 @@ Note: pack distribution is not public, however you can play same combination.
 |BiomeTweaker|[1.12.2-3.2.369](https://www.curseforge.com/minecraft/mc-mods/biometweaker/files/3112142)|[MMPLv2](https://github.com/superckl/BiomeTweaker/blob/961bed5f03b5e8fcea7d2743e1fad16b9766eba5/LICENSE.md)|
 |Biomes O' Plenty|[1.12.2-7.0.1.2445](https://www.curseforge.com/minecraft/mc-mods/biomes-o-plenty/files/3558882)|All Rights Reserved|
 |Bookshelf|[1.12.2-2.3.590](https://www.curseforge.com/minecraft/mc-mods/bookshelf/files/2836960)|[LGPL 2.1](https://github.com/Darkhax-Minecraft/Bookshelf/blob/c920f1c4e23803295feca81f0f619e7fc70ebec9/License.md)|
-|BrandonsCore|1.12.2-2.4.20.162-universal|[Custom license \[allows modpack\]](https://www.curseforge.com/project/231382/license)|
+|Brandon's Core|[1.12.2-2.4.20.162](https://www.curseforge.com/minecraft/mc-mods/brandons-core/files/3408276)|[Custom license \[allows modpack\]](https://www.curseforge.com/project/231382/license)|
 |Chameleon|[1.12-4.1.3](https://www.curseforge.com/minecraft/mc-mods/chameleon/files/2450900)|MIT|
 |CodeChickenLib|[1.12.2-3.2.3.358-universal](https://www.curseforge.com/minecraft/mc-mods/codechicken-lib-1-8/files/2779848)|LGPL 2.1|
 |CookingForBlockheads|1.12.2-6.5.0|[Custom license\[allows modpack\]](https://github.com/ModdingForBlockheads/CookingForBlockheads/blob/416279fbc54b72e2e286002caa43779e1d4362fc/LICENSE)<br>or [MIT](https://github.com/ModdingForBlockheads/CookingForBlockheads/blob/31221d904b8ce24899eb51160ce58efbe13bf028/LICENSE)|
@@ -84,7 +84,6 @@ Note: pack distribution is not public, however you can play same combination.
 |YARCF|[0.14-1.12.2](https://www.curseforge.com/minecraft/mc-mods/yarcf/files/3310627)|GPLv3|
 |Applied Energistics 2|[rv5-stable-1](https://www.curseforge.com/minecraft/mc-mods/applied-energistics-2/files/2497056)|LGPLv3|
 |Bad Wither No Cookie - Reloaded|[1.12.2-3.3.16](https://www.curseforge.com/minecraft/mc-mods/bad-wither-no-cookie-reloaded/files/2638317)|MIT|
-|Brandon's Core|[1.12.2-2.4.20.162](https://www.curseforge.com/minecraft/mc-mods/brandons-core/files/3408276)|Don't Be a Jerk|
 |compactmachines3|[1.12.2-3.0.18-b278](https://www.curseforge.com/minecraft/mc-mods/compact-machines/files/2707509)|LGPLv3|
 |extrautils2|[1.12-1.9.9](https://www.curseforge.com/minecraft/mc-mods/extra-utilities/files/2678374)|All Rights Reserved|
 |ftb-ultimine|[1202.3.5](https://www.curseforge.com/minecraft/mc-mods/ftb-ultimine-forge/files/3078750)|All Rights Reserved|
