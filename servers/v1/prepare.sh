@@ -3,7 +3,7 @@
 
 set -x
 function die() {
-  echo "$*"
+  echo "$(tput setab 1)$(tput setaf 15)$*$(tput init)"
   exit 1
 }
 
