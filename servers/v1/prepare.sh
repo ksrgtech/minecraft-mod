@@ -81,9 +81,7 @@ MOD_DIR=$DIR/mods
 
 pre_execute
 
-if [[ "$CLIENT" == "1" ]]; then
-  dl "https://optifine.net/downloadx?f=OptiFine_1.12.2_HD_U_G5.jar&x=79875e46fbbc1166cb1d14b96c5a684a" "OptiFine_1.12.2_HD_U_G5"
-fi
+# NOTE: OptiFine is not auto-installable.
 
 if [[ "$SERVER" == "1" ]]; then
   # see #23
