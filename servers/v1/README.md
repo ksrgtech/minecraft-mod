@@ -47,6 +47,8 @@ Note: pack distribution is not public, however you can play same combination.
 |[GunpowderLib](https://www.curseforge.com/minecraft/mc-mods/gunpowderlib)|[1.12.2-1.1](https://www.curseforge.com/minecraft/mc-mods/gunpowderlib/files/3168863)|[Jacky's License](https://github.com/JackyyTV/GunpowderLib/blob/e2a532d65814bc0a84e3f07d364581991f85a9eb/LICENSE.md)|
 |Geographicraft|[1.12-0.89b](https://www.curseforge.com/minecraft/mc-mods/climate-control-geographicraft/files/2497541)|LGPLv3|
 |Hwyla|[1.8.26-B41_1.12.2](https://www.curseforge.com/minecraft/mc-mods/hwyla/files/2568751)|CC BY-NC-SA 4.0|
+|Integrated Dynamics|[1.12.2-1.1.11](https://www.curseforge.com/minecraft/mc-mods/integrated-dynamics/files/3159505)|MIT|
+|Integrated Tunnels|[1.12.2-1.6.14](https://www.curseforge.com/minecraft/mc-mods/integrated-tunnels/files/3159511)|MIT|
 |IntegrationForgoing|[1.12.2-1.11](https://www.curseforge.com/minecraft/mc-mods/integration-foregoing/files/3200529)|Jacky's License|
 |InventoryTweaks|[1.64+dev.151](https://www.curseforge.com/minecraft/mc-mods/inventory-tweaks/files/2923460)|MIT|
 |Immersive Engineering|[0.12-98](https://www.curseforge.com/minecraft/mc-mods/immersive-engineering/files/2974106)|Custom License [inclusion: allow]|
