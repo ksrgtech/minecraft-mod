@@ -64,6 +64,11 @@ function curse_dl() {
   rm "$x"
 }
 
+function has_child() {
+  dir="$1"
+  [[ $(find "$dir" -mindepth 1 | wc -l) -gt 0 ]]
+}
+
 DIR=run
 MOD_DIR=$DIR/mods
 
@@ -85,7 +90,7 @@ curse_dl
 
 cp -r data/common/* run
 if [[ "$CLIENT" == "1" ]]; then
-  [ -d "data/client" ] && cp -r data/client/* run
+  has_child "data/client" && cp -r data/client/* run
 elif [[ "$SERVER" == "1" ]]; then
-  [ -d "data/server" ] && cp -r data/server/* run
+  has_child "data/server" && cp -r data/server/* run
 fi
