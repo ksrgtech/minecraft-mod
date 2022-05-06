@@ -21,7 +21,6 @@ Note: pack distribution is not public, however you can play same combination.
 |Avaritiaddons|[1.12.2-1.3](https://www.curseforge.com/minecraft/mc-mods/avaritiaddons/files/3662188)|MPL 2.0|
 |Baublelicious|[1.4.0-4](https://www.curseforge.com/minecraft/mc-mods/baublelicious/files/2532880)|All Rights Reserved|
 |Baubles|[1.12-1.5.2](https://www.curseforge.com/minecraft/mc-mods/baubles/files/2518667)|CC BY-NC-SA 3.0|
-|[BetterBlockGen](https://www.curseforge.com/minecraft/mc-mods/betterbedrockgen/files)|[1.12-6.1.1](https://www.curseforge.com/minecraft/mc-mods/betterbedrockgen/files/2458763)|AGPLv3|
 |[BetterFps](https://www.curseforge.com/minecraft/mc-mods/betterfps)|[1.4.8](https://www.curseforge.com/minecraft/mc-mods/betterfps/files/2483393)|LGPL 2.1|
 |BibilioCraft|[2.4.6-1.12.2](https://www.curseforge.com/minecraft/mc-mods/bibliocraft/files/3647708)|All Rights Reserved|
 |BiomeTweaker|[1.12.2-3.2.369](https://www.curseforge.com/minecraft/mc-mods/biometweaker/files/3112142)|[MMPLv2](https://github.com/superckl/BiomeTweaker/blob/961bed5f03b5e8fcea7d2743e1fad16b9766eba5/LICENSE.md)|
@@ -118,3 +117,11 @@ Note: pack distribution is not public, however you can play same combination.
 |[Xaero's Minimap](https://www.curseforge.com/minecraft/mc-mods/xaeros-minimap)|[22.7.0](https://www.curseforge.com/minecraft/mc-mods/xaeros-minimap/files/3778428)|Custom License [inclusion: allowed]|
 |[Xaero's World Map](https://www.curseforge.com/minecraft/mc-mods/controlling/files)|[1.21.1](https://www.curseforge.com/minecraft/mc-mods/xaeros-world-map/files/3779536)|Custom License [inclusion: allowed]|
 |[SpongeForge](https://spongepowered.org/downloads/spongeforge)|[1.12.2-2838-7.4.7](https://spongepowered.org/downloads/spongeforge)| [MIT License](https://github.com/SpongePowered/SpongeForge/blob/stable-7/LICENSE.txt) |
+
+## local test
+### getting pack
+1. Get on our Discord
+2. Manually download (run `./prepare.sh`)
+
+### single player
+* 岩盤平滑化：ワールドタイプをRTGにして、カスタマイズからBedrock Layerを1にすること！！！
