@@ -83,8 +83,9 @@ dl "https://github.com/KisaragiEffective/Sakura_mod/releases/download/1.0.8-1.12
 
 curse_dl
 
+cp -r common/* run
 if [[ "$CLIENT" == "1" ]]; then
-  [ -d "client" ] && cp client/* run
+  [ -d "client" ] && cp -r client/* run
 elif [[ "$SERVER" == "1" ]]; then
-  [ -d "server" ] && cp server/* run
+  [ -d "server" ] && cp -r server/* run
 fi
