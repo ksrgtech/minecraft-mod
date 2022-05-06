@@ -32,6 +32,8 @@ Note: pack distribution is not public, however you can play same combination.
 |CookingForBlockheads|[1.12.2-6.5.0](https://www.curseforge.com/minecraft/mc-mods/cooking-for-blockheads/files/2862651)|[Custom license\[allows modpack\]](https://github.com/ModdingForBlockheads/CookingForBlockheads/blob/416279fbc54b72e2e286002caa43779e1d4362fc/LICENSE)<br>or [MIT](https://github.com/ModdingForBlockheads/CookingForBlockheads/blob/31221d904b8ce24899eb51160ce58efbe13bf028/LICENSE)|
 |Cucumber|[1.12.2-1.1.3](https://www.curseforge.com/minecraft/mc-mods/cucumber/files/2645867)|MIT|
 |Cyclic|[1.12.2-1.20.12](https://www.curseforge.com/minecraft/mc-mods/cyclic/files/3722420)|[MIT](https://github.com/Lothrazar/Cyclic/blob/ebaa99f9d1f0cdf716245ef2227e9af60a94780d/LICENSE.txt)|
+|Cyclops Core|[1.12.2-1.6.7](https://www.curseforge.com/minecraft/mc-mods/cyclops-core/files/3159497)|MIT|
+|Common Capabilities|[1.12.2-2.4.8](https://www.curseforge.com/minecraft/mc-mods/common-capabilities/files/3053017)|MIT|
 |DarkUtils|[1.12.2-1.8.230](https://www.curseforge.com/minecraft/mc-mods/dark-utilities/files/2813586)|LGPL 2.1|
 |Draconic-Additions|[1.12.2-1.17.0.45-universal](https://www.curseforge.com/minecraft/mc-mods/draconicadditions/files/3514704)|["Don't be a Jerk"](https://www.curseforge.com/project/314515/license)|
 |Draconic-Evolution|[1.12.2-2.3.28.354-universal](https://www.curseforge.com/minecraft/mc-mods/draconic-evolution/files/3431261)|["Don't be a Jerk"](https://www.curseforge.com/project/223565/license)|

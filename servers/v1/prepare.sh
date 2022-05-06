@@ -64,6 +64,11 @@ function curse_dl() {
   rm "$x"
 }
 
+function has_child() {
+  dir="$1"
+  [[ $(find "$dir" -mindepth 1 | wc -l) -gt 0 ]]
+}
+
 DIR=run
 MOD_DIR=$DIR/mods
 
@@ -83,8 +88,9 @@ dl "https://github.com/KisaragiEffective/Sakura_mod/releases/download/1.0.8-1.12
 
 curse_dl
 
+cp -r data/common/* run
 if [[ "$CLIENT" == "1" ]]; then
-  [ -d "client" ] && cp client/* run
+  has_child "data/client" && cp -r data/client/* run
 elif [[ "$SERVER" == "1" ]]; then
-  [ -d "server" ] && cp server/* run
+  has_child "data/server" && cp -r data/server/* run
 fi
