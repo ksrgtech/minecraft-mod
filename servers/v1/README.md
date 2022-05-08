@@ -110,6 +110,7 @@ Note: pack distribution is not public, however you can play same combination.
 ### client only
 |Name|Version|License|
 |:---|:---|:---|
+|[OAuth](https://www.curseforge.com/minecraft/mc-mods/oauth)|[1.06.4](https://www.curseforge.com/minecraft/mc-mods/oauth/files/3739783)|GPLv3|
 |[OptiFine](https://optifine.net)|1.12.2_HD_U_G5|All Rights Reserved|
 |[controlling](https://www.curseforge.com/minecraft/mc-mods/controlling)|[3.0.10](https://www.curseforge.com/minecraft/mc-mods/controlling/files/3025548)|MIT|
 
