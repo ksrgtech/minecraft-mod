@@ -29,16 +29,15 @@ function dl() {
   curl -Lso "$MOD_DIR/$FILE.jar" "$URL"
 }
 
+function echo-bar() {
+  echo "-------------------------------------------------------"
+}
+
 function curse_dl() {
   set -e
+  readonly file="$1"
   local x
   x=$(mktemp)
-  local file
-  if [[ "$SERVER" == "1" ]]; then
-    file="cf_mods_server.json"
-  elif [[ "$CLIENT" == "1" ]]; then
-    file="cf_mods_client.json"
-  fi
   # ✝✝✝!!!META-PROGRAMMING!!!✝✝✝
   # shellcheck disable=SC2016
   curl \
@@ -58,6 +57,10 @@ function curse_dl() {
   chmod +x "$x"
   # syntax validation
   /bin/bash -n "$x"
+  echo "Install script:"
+  echo-bar
+  cat "$x"
+  echo-bar
   $x
   ls run/mods
   file run/mods/*.jar
@@ -86,7 +89,11 @@ dl "https://web.archive.org/web/20190715131820/https://forum.minecraftuser.jp/do
 dl "https://github.com/KisaragiEffective/publicfile/blob/master/RTG-1.12.2-6.1.0.0-snapshot.2+flavored.ksrg.git-b7769d2dc6d0941922a26090dd1c15328eb4d1d0?raw=true" "RTG-1.12.2-6.1.0.0-snapshot.2+flavored.ksrg.git-b7769d2dc6d0941922a26090dd1c15328eb4d1d0"
 dl "https://github.com/KisaragiEffective/Sakura_mod/releases/download/1.0.8-1.12.2%2Bflavored.ksrg.4/Sakura-1.0.8-1.12.2+flavored.ksrg.4.jar" "Sakura-1.0.8-1.12.2+flavored.ksrg.4"
 
-curse_dl
+if [[ "$SERVER" == "1" ]]; then
+  curse_dl "cf_mods_server.json"
+elif [[ "$CLIENT" == "1" ]]; then
+  curse_dl "cf_mods_client.json"
+fi
 
 cp -r data/common/* run
 if [[ "$CLIENT" == "1" ]]; then
