@@ -94,6 +94,7 @@ dl "https://web.archive.org/web/20190715131820/https://forum.minecraftuser.jp/do
 dl "https://github.com/KisaragiEffective/publicfile/blob/master/RTG-1.12.2-6.1.0.0-snapshot.2+flavored.ksrg.git-b7769d2dc6d0941922a26090dd1c15328eb4d1d0?raw=true" "RTG-1.12.2-6.1.0.0-snapshot.2+flavored.ksrg.git-b7769d2dc6d0941922a26090dd1c15328eb4d1d0"
 dl "https://github.com/KisaragiEffective/Sakura_mod/releases/download/1.0.8-1.12.2%2Bflavored.ksrg.4/Sakura-1.0.8-1.12.2+flavored.ksrg.4.jar" "Sakura-1.0.8-1.12.2+flavored.ksrg.4"
 
+curse_dl "cf_mods_common.json"
 if [[ "$install_server" == "1" ]]; then
   curse_dl "cf_mods_server.json"
 elif [[ "$install_client" == "1" ]]; then
