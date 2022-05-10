@@ -12,7 +12,7 @@ function pre_execute() {
   mkdir -p $MOD_DIR
   [ -z "$DIR" ] && die "\$DIR can not be empty"
   [ ! -d "$DIR" ] && mkdir -p "$DIR"
-  [[ "$SIDE" != "server" && "$SIDE" != "" ]] && die "You must specify 'server' or 'client' in \$SIDE"
+  [[ "$PROFILE" != "multi_server" && "$PROFILE" != "multi_client" && "$PROFILE" != "single" ]] && die "You must specify one of 'multi_server', 'multi_client' or 'single' in \$PROFILE"
 
   if [ -z "$CURSE_API_KEY" ]; then
     die "CFCore token must be provided via \$CURSE_API_KEY. Please get it from https://console.curseforge.com"
@@ -25,7 +25,9 @@ function dl() {
   URL="$1"
   FILE="$2"
   echo "Downloading $URL as $FILE"
-  curl -Lso "$MOD_DIR/$FILE.jar" "$URL"
+  if [[ "$DRYRUN" == "" ]]; then
+    curl -Lso "$MOD_DIR/$FILE.jar" "$URL"
+  fi
 }
 
 function echo-bar() {
@@ -51,7 +53,7 @@ function curse_dl() {
       -r \
       --arg curse $CURSE_API_KEY \
       --arg dir $MOD_DIR \
-      '.data[] | {fileId: .id, modId, fileName} | ("curl -qf -H \"Accept: application/json\" -H \u0027x-api-key: " + $curse + "\u0027 " + "https://api.curseforge.com/v1/mods/" + (.modId | tostring) + "/files/" + (.fileId | tostring) + "/download-url" + " | " + "jq -r \u0027.data\u0027" + " | " + "tr -d \u0027\\n\u0027" + " | " + "xargs -P -0 -i wget {} -O \"" + $dir + "/" + .fileName + "\"")' \
+      '.data[] | {fileId: .id, modId, fileName} | ("curl -qf -H \"Accept: application/json\" -H \u0027x-api-key: " + $curse + "\u0027 " + "https://api.curseforge.com/v1/mods/" + (.modId | tostring) + "/files/" + (.fileId | tostring) + "/download-url" + " | " + "wget \"$(jq -r \u0027.data\u0027 | tr -d \"\\n\")\" -O \"" + $dir + "/" + (.fileName | gsub("\u0027"; "")) + "\"")' \
     | tee "$x" >/dev/null # Yeah, this is a security risk
   chmod +x "$x"
   # syntax validation
@@ -60,9 +62,11 @@ function curse_dl() {
   echo-bar
   cat "$x"
   echo-bar
-  $x
-  ls run/mods
-  file run/mods/*.jar
+  if [[ "$DRYRUN" == "" ]]; then
+    $x
+    ls run/mods
+    file run/mods/*.jar
+  fi
   rm "$x"
 }
 
@@ -76,9 +80,11 @@ MOD_DIR=$DIR/mods
 
 pre_execute
 
-# NOTE: OptiFine is not auto-installable.
+readonly install_server="$([[ "$PROFILE" == "multi_server" || "$PROFILE" == "single" ]] && echo "1" || echo "0")";
+readonly install_client="$([[ "$PROFILE" == "multi_client" || "$PROFILE" == "single" ]] && echo "1" || echo "0")";
 
-if [[ "$SIDE" == "server" ]]; then
+# NOTE: OptiFine is not auto-installable.
+if [[ "$install_server" == "1" ]]; then
   # see #23
   dl "https://repo.spongepowered.org/repository/maven-releases/org/spongepowered/spongeforge/1.12.2-2838-7.4.7/spongeforge-1.12.2-2838-7.4.7.jar" "spongeforge-1.12.2-2838-7.4.7"
 fi
@@ -88,15 +94,16 @@ dl "https://web.archive.org/web/20190715131820/https://forum.minecraftuser.jp/do
 dl "https://github.com/KisaragiEffective/publicfile/blob/master/RTG-1.12.2-6.1.0.0-snapshot.2+flavored.ksrg.git-b7769d2dc6d0941922a26090dd1c15328eb4d1d0?raw=true" "RTG-1.12.2-6.1.0.0-snapshot.2+flavored.ksrg.git-b7769d2dc6d0941922a26090dd1c15328eb4d1d0"
 dl "https://github.com/KisaragiEffective/Sakura_mod/releases/download/1.0.8-1.12.2%2Bflavored.ksrg.4/Sakura-1.0.8-1.12.2+flavored.ksrg.4.jar" "Sakura-1.0.8-1.12.2+flavored.ksrg.4"
 
-if [[ "$SIDE" == "server" ]]; then
+curse_dl "cf_mods_common.json"
+if [[ "$install_server" == "1" ]]; then
   curse_dl "cf_mods_server.json"
-elif [[ "$SIDE" == "client" ]]; then
+elif [[ "$install_client" == "1" ]]; then
   curse_dl "cf_mods_client.json"
 fi
 
 cp -r data/common/* run
-if [[ "$SIDE" == "client" ]]; then
+if [[ "$install_client" == "1" ]]; then
   has_child "data/client" && cp -r data/client/* run
-elif [[ "$SIDE" == "server" ]]; then
+elif [[ "$install_server" == "1" ]]; then
   has_child "data/server" && cp -r data/server/* run
 fi
