@@ -30,6 +30,7 @@ Note: pack distribution is not public, however you can play same combination.
 |Chameleon|[1.12-4.1.3](https://www.curseforge.com/minecraft/mc-mods/chameleon/files/2450900)|MIT|
 |CodeChickenLib|[1.12.2-3.2.3.358-universal](https://www.curseforge.com/minecraft/mc-mods/codechicken-lib-1-8/files/2779848)|LGPL 2.1|
 |CookingForBlockheads|[1.12.2-6.5.0](https://www.curseforge.com/minecraft/mc-mods/cooking-for-blockheads/files/2862651)|[Custom license\[allows modpack\]](https://github.com/ModdingForBlockheads/CookingForBlockheads/blob/416279fbc54b72e2e286002caa43779e1d4362fc/LICENSE)<br>or [MIT](https://github.com/ModdingForBlockheads/CookingForBlockheads/blob/31221d904b8ce24899eb51160ce58efbe13bf028/LICENSE)|
+|[CraftTweaker](https://www.curseforge.com/minecraft/mc-mods/crafttweaker)|[1.12-4.1.20.675](https://www.curseforge.com/minecraft/mc-mods/crafttweaker/files/3784010)|MIT|
 |Cucumber|[1.12.2-1.1.3](https://www.curseforge.com/minecraft/mc-mods/cucumber/files/2645867)|MIT|
 |Cyclic|[1.12.2-1.20.12](https://www.curseforge.com/minecraft/mc-mods/cyclic/files/3722420)|[MIT](https://github.com/Lothrazar/Cyclic/blob/ebaa99f9d1f0cdf716245ef2227e9af60a94780d/LICENSE.txt)|
 |Cyclops Core|[1.12.2-1.6.7](https://www.curseforge.com/minecraft/mc-mods/cyclops-core/files/3159497)|MIT|
