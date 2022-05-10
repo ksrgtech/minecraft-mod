@@ -25,7 +25,9 @@ function dl() {
   URL="$1"
   FILE="$2"
   echo "Downloading $URL as $FILE"
-  curl -Lso "$MOD_DIR/$FILE.jar" "$URL"
+  if [[ "$DRYRUN" == "" ]]; then
+    curl -Lso "$MOD_DIR/$FILE.jar" "$URL"
+  fi
 }
 
 function echo-bar() {
@@ -60,9 +62,11 @@ function curse_dl() {
   echo-bar
   cat "$x"
   echo-bar
-  $x
-  ls run/mods
-  file run/mods/*.jar
+  if [[ "$DRYRUN" == "" ]]; then
+    $x
+    ls run/mods
+    file run/mods/*.jar
+  fi
   rm "$x"
 }
 
