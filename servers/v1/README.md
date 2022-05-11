@@ -98,7 +98,7 @@ Note: pack distribution is not public, however you can play same combination.
 |jei|[1.12.2-4.16.1.302](https://www.curseforge.com/minecraft/mc-mods/jei/files/3043174)|MIT|
 |jeiintegration|[1.12.2-1.6.0](https://www.curseforge.com/minecraft/mc-mods/jei-integration/files/2951731)|MIT|
 |journeymap|[1.12.2-5.7.1](https://www.curseforge.com/minecraft/mc-mods/journeymap/files/2916002)|All Rights Reserved|
-|reauth|[3.6.0](https://www.curseforge.com/minecraft/mc-mods/reauth/files/2560638)|[Custom License](https://www.curseforge.com/minecraft/mc-mods/reauth)|
+|reauth|[4.0.0-1.12](https://www.curseforge.com/minecraft/mc-mods/reauth/files/3784942)|[Custom License](https://www.curseforge.com/minecraft/mc-mods/reauth)|
 |[recycler](https://www.curseforge.com/minecraft/mc-mods/corail-recycler)|[3.2.4-1.12](https://www.curseforge.com/minecraft/mc-mods/corail-recycler/files/2753557)|Custom License [inclusion: allowed]|
 |sit|[1.12.2-v1.3](https://www.curseforge.com/minecraft/mc-mods/sit/files/2848862)|GPLv3|
 |speedyhoppers|[1.1.19_1](https://www.curseforge.com/minecraft/mc-mods/speedy-hoppers/files/2755876)|MIT|
