@@ -59,7 +59,7 @@ jobs:
         run: |
           echo $GITHUB_WORKSPACE
           ls $GITHUB_WORKSPACE
-          (cd server/v1 &&
+          (cd servers/v1 &&
           ./download.sh &&
           ./pack.sh)
 
