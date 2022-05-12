@@ -36,7 +36,7 @@ function echo-bar() {
 
 function curse_dl() {
   set -e
-  readonly json="$1"
+  json="$1"
   local x
   x=$(mktemp)
   # ✝✝✝!!!META-PROGRAMMING!!!✝✝✝
