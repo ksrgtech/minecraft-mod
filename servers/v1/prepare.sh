@@ -36,7 +36,7 @@ function echo-bar() {
 
 function curse_dl() {
   set -e
-  readonly file="$1"
+  readonly json="$1"
   local x
   x=$(mktemp)
   # ✝✝✝!!!META-PROGRAMMING!!!✝✝✝
@@ -47,7 +47,7 @@ function curse_dl() {
       -H "Accept: application/json" \
       -H "Content-Type: application/json" \
       -H "x-api-key: $CURSE_API_KEY" \
-      -d@$file \
+      -d@$json \
       https://api.curseforge.com/v1/mods/files \
     | jq \
       -r \
