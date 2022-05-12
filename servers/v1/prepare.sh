@@ -72,7 +72,7 @@ function curse_dl() {
 
 function has_child() {
   dir="$1"
-  [[ $(find "$dir" -mindepth 1 | wc -l) -gt 0 ]]
+  [[ -d "$dir" && $(find "$dir" -mindepth 1 | wc -l) -gt 0 ]]
 }
 
 DIR=run
