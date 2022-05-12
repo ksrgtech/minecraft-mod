@@ -5,19 +5,19 @@ function die() {
 }
 
 wd=$(mktemp -d)
-cp -r run/config $wd/config
-cp -r run/mods $wd/mods
+cp -r run/config "$wd"/config
+cp -r run/mods "$wd"/mods
 
 git_tag="$(git rev-parse HEAD)"
 current_date=$(TZ='Asia/Tokyo' date +%Y-%m-%d_%H-%M-%S)
-if [[ "x$DETAILED_NAME" == "x" ]]; then
+if [[ "$DETAILED_NAME" == "" ]]; then
   file_name="packed.zip"
 else
   file_name="packed_${current_date}_git-$git_tag.zip"
 fi
 
-(cd $wd && zip -9r $file_name .) && cp $wd/$file_name .
-rm -r $wd
+(cd "$wd" && zip -9r "$file_name" .) && cp "$wd"/"$file_name" .
+rm -r "$wd"
 
 if [[ "$UPLOAD" != "" ]]; then
   [[ "$GITHUB_TOKEN" == "" ]] && die "\$GITHUB_TOKEN must be provided"
@@ -47,7 +47,7 @@ if [[ "$UPLOAD" != "" ]]; then
 
   readonly upload_url="$(echo "$create_release" | jq -r '.upload_url' | sed -E "s/\{[^\}]+\}$//")?name=$release_name.zip"
 
-  echo Uploading to $upload_url
+  echo Uploading to "$upload_url"
 
   curl \
     -X POST \
