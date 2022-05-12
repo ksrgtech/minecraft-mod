@@ -34,6 +34,7 @@ name: v1
 
 # Controls when the workflow will run
 on:
+  pull_request:
   # Triggers the workflow on push or pull request events but only for the live branch
   push:
     branches: live
@@ -53,30 +54,15 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: checkout this repo
         uses: actions/checkout@v3
-        with:
-          path: toolkit
-      - name: checkout dest repo
-        uses: actions/checkout@v3
-        with:
-          repository: ${{ secrets.DEST_USER }}/${{ secrets.DEST_REPO }}
-          path: dest
-          token: ${{ secrets.DEST_PAT }}
-
       # Runs a single command using the runners shell
-      - name: pack and copy
+      - name: test installing
         run: |
           echo $GITHUB_WORKSPACE
           ls $GITHUB_WORKSPACE
-          (cd toolkit/server/v1 &&
+          (cd server/v1 &&
           ./download.sh &&
-          ./pack.sh &&
-          cp packed.zip $GITHUB_WORKSPACE/dest)
-      # Runs a set of commands using the runners shell
-      - name: commit
-        run: |
-          cd $GITHUB_WORKSPACE/dest
-          git commit -m "$(TZ='Asia/Tokyo' date +%Y-%m-%d_%H.%M.%S) update"
-          git push "https://${{ secrets.DEST_USER }}:${{ secrets.DEST_PAT }}@github.com/${{ secrets.DEST_REPO }}.git"
+          ./pack.sh)
+
 
 
 
