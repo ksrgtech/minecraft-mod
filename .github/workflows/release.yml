@@ -46,6 +46,13 @@ on:
 jobs:
   # This workflow contains a single job called "build"
   build:
+    strategy:
+      matrix:
+        profile:
+          - "single"
+          - "multi_client"
+          - "multi_server"
+    
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -60,7 +67,7 @@ jobs:
           echo $GITHUB_WORKSPACE
           ls $GITHUB_WORKSPACE
           (cd servers/v1 &&
-          ./download.sh &&
+          PROFILE="${{ matrix.profile }}" CURSE_API_KEY='${{ secrets.TEST_CURSE_API_KEY }}' ./prepare.sh &&
           ./pack.sh)
 
 
