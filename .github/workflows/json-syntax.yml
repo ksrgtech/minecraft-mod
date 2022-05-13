@@ -15,4 +15,5 @@ jobs:
       - name: json-syntax-check
         uses: limitusus/json-syntax-check@v1
         with:
-          pattern: "\\.json$"
+          # suppress them
+          pattern: "(?<!servers/v1/data/common/config/JustEnoughCalculation/record|servers/v1/data/common/config/codechicken/supporters)\\.json$"
