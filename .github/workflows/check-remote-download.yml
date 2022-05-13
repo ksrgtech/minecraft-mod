@@ -35,15 +35,24 @@ name: v1
 # Controls when the workflow will run
 on:
   pull_request:
-  # Triggers the workflow on push or pull request events but only for the live branch
-  push:
-    branches: live
+    paths:
+      - servers/v1/cf_mods.json
+      - servers/v1/prepare.sh
+      - .github/workflows/check-remote-download.yml
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
+  syntax_check:
+    steps:
+    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+    - name: checkout this repo
+      uses: actions/checkout@v3
+    - name: syntax check
+      run: |
+        find . -name '*.sh' | xargs --replace bash -n {}
   check_remote_download:
     strategy:
       matrix:
@@ -56,10 +65,6 @@ jobs:
     runs-on: ubuntu-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
-    steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - name: checkout this repo
-        uses: actions/checkout@v3
       # Runs a single command using the runners shell
       - name: test installing
         run: |
