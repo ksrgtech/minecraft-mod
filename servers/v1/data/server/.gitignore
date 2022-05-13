@@ -1,0 +1,19 @@
+# It may a cause of repository hard limit :X
+world
+
+# Risk of copyright issue
+minecraft_server.1.12.2.jar
+server.jar
+
+# needless
+eula.txt
+libraries
+logs
+usercache.json
+usernamecache.json
+
+# secret
+banned-ips.json
+banned-players.json
+ops.json
+whitelist.json
