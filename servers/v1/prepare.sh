@@ -36,7 +36,7 @@ function echo-bar() {
 
 function curse_dl() {
   set -e
-  readonly file="$1"
+  json="$1"
   local x
   x=$(mktemp)
   # ✝✝✝!!!META-PROGRAMMING!!!✝✝✝
@@ -47,7 +47,7 @@ function curse_dl() {
       -H "Accept: application/json" \
       -H "Content-Type: application/json" \
       -H "x-api-key: $CURSE_API_KEY" \
-      -d@$file \
+      -d@$json \
       https://api.curseforge.com/v1/mods/files \
     | jq \
       -r \
@@ -72,7 +72,11 @@ function curse_dl() {
 
 function has_child() {
   dir="$1"
-  [[ $(find "$dir" -mindepth 1 | wc -l) -gt 0 ]]
+  if [[ -d "$dir" && $(find "$dir" -mindepth 1 | wc -l) -gt 0 ]]; then
+    echo 1
+  else
+    echo 0
+  fi
 }
 
 DIR=run
@@ -103,7 +107,11 @@ fi
 
 cp -r data/common/* run
 if [[ "$install_client" == "1" ]]; then
-  has_child "data/client" && cp -r data/client/* run
+  if [[ $(has_child "data/client") == 1 ]]; then
+    cp -r data/client/* run
+  fi
 elif [[ "$install_server" == "1" ]]; then
-  has_child "data/server" && cp -r data/server/* run
+  if [[ $(has_child "data/server") == 1 ]]; then
+    cp -r data/server/* run
+  fi
 fi
