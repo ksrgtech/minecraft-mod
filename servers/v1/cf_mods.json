@@ -758,5 +758,14 @@
       "multi_client": false,
       "multi_server": false
     }
+  },
+  {
+    "id": 2661356,
+    "name": "Torcherino",
+    "profile": {
+      "single": true,
+      "multi_client": true,
+      "multi_server": true
+    }
   }
 ]
