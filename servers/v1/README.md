@@ -82,6 +82,7 @@
 |StorageDrawers|[1.12.2-5.4.2](https://www.curseforge.com/minecraft/mc-mods/storage-drawers/files/2952606)|MIT|
 |TickCentral|[3.2](https://www.curseforge.com/minecraft/mc-mods/tickcentral/files/3140670)|GPLv3|
 |TofuCraftReload|[0.1.0.9](https://www.curseforge.com/minecraft/mc-mods/tofucraftreload/files/3115668)|MIT|
+|Torcherino|[7.6](https://www.curseforge.com/minecraft/mc-mods/torcherino/files/2661356)|MIT|たいまつ？|
 |WailaHarvestability|[1.12-1.1.12](https://www.curseforge.com/minecraft/mc-mods/waila-harvestability/files/2481605)|Public Domain|
 |WanionLib|[1.12.2-2.9](https://www.curseforge.com/minecraft/mc-mods/wanionlib/files/3597087)|MPL 2.0|
 |Wawla|[1.12.2-2.6.275](https://www.curseforge.com/minecraft/mc-mods/wawla/files/2916368)|LGPL 2.1|
