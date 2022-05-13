@@ -9,6 +9,8 @@ server.jar
 eula.txt
 libraries
 logs
+usercache.json
+usernamecache.json
 
 # secret
 banned-ips.json
