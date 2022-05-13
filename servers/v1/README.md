@@ -1,16 +1,15 @@
 # v1
-platform: forge
-GomiServer v2の構成をベースにしたmodpack
+ごみ鯖v2の構成をベースにしたもっも構成
 
-## environments
+## 動作環境
 * Java 8
 * [Forge 1.12.2](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.12.2.html) #2859
 
-## mods
-Note: pack distribution is not public, however you can play same combination.
+## もっも
+※パックの配布は公衆に行っていません
 
-### common
-|Name|Version|License|Description|
+### サーバー・クライアント共通
+|なまえ|ばーじょん|らいせんす|めも|
 |:---|:---|:---|:---|
 |Aroma1997|[1.12.2-2.0.0.2](https://www.curseforge.com/minecraft/mc-mods/aroma1997s-dimensional-world/files/2672438)|[Custom License](https://www.curseforge.com/project/60092/license)|採掘ディメンション|
 |Aroma1997Core|[1.12.2-2.0.0.2](https://www.curseforge.com/minecraft/mc-mods/aroma1997core/files/2676866)|GPLv3|Aroma1997の依存先|
@@ -108,23 +107,23 @@ Note: pack distribution is not public, however you can play same combination.
 |twilightforest|[1.12.2-3.11.1021-universal](https://www.curseforge.com/minecraft/mc-mods/the-twilight-forest/files/3051450)|LGPL 2.1|黄昏〜＾|
 |unloader|[1.2.0](https://www.curseforge.com/minecraft/mc-mods/unloader/files/2572528)|MIT|
 
-### client only
-|Name|Version|License|Description|
+### クライアントのみ
+|なまえ|ばーじょん|らいせんす|めも|
 |:---|:---|:---|:---|
 |[OptiFine](https://optifine.net)|1.12.2_HD_U_G5|All Rights Reserved|みんな入れてるやつ|
 |[controlling](https://www.curseforge.com/minecraft/mc-mods/controlling)|[3.0.10](https://www.curseforge.com/minecraft/mc-mods/controlling/files/3025548)|MIT|キー割当プリセット|
 
-### server only
-|Name|Version|License|Description|
+### サーバーのみ
+|なまえ|ばーじょん|らいせんす|めも|
 |:---|:---|:---|:---|
 |[Xaero's Minimap](https://www.curseforge.com/minecraft/mc-mods/xaeros-minimap)|[22.7.0](https://www.curseforge.com/minecraft/mc-mods/xaeros-minimap/files/3778428)|Custom License [inclusion: allowed]|Xaero's Minimapの機能をフル解禁|
 |[Xaero's World Map](https://www.curseforge.com/minecraft/mc-mods/controlling/files)|[1.21.1](https://www.curseforge.com/minecraft/mc-mods/xaeros-world-map/files/3779536)|Custom License [inclusion: allowed]|Xaero's Minimapの機能をフル解禁|
 |[SpongeForge](https://spongepowered.org/downloads/spongeforge)|[1.12.2-2838-7.4.7](https://spongepowered.org/downloads/spongeforge)| [MIT License](https://github.com/SpongePowered/SpongeForge/blob/stable-7/LICENSE.txt) |Velocityからのプレイヤーデータ中継用|
 
-## local test
-### getting pack
-1. Get on our Discord
-2. Manually download (run `./prepare.sh`)
+## テスト
+### パックのインストール
+1. Discordで入手
+2. 手動ダウンロード (run `./prepare.sh`)
 
-### single player
+### シングルプレイヤー
 * 岩盤平滑化：ワールドタイプをRTGにして、カスタマイズからBedrock Layerを1にすること！！！
