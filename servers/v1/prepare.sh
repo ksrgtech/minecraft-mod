@@ -88,7 +88,7 @@ readonly install_server="$([[ "$PROFILE" == "multi_server" || "$PROFILE" == "sin
 readonly install_client="$([[ "$PROFILE" == "multi_client" || "$PROFILE" == "single" ]] && echo "1" || echo "0")";
 
 # NOTE: OptiFine is not auto-installable.
-if [[ "$install_server" == "1" ]]; then
+if [[ "$PROFILE" == "multi_server" ]]; then
   # see #23
   dl "https://repo.spongepowered.org/repository/maven-releases/org/spongepowered/spongeforge/1.12.2-2838-7.4.7/spongeforge-1.12.2-2838-7.4.7.jar" "spongeforge-1.12.2-2838-7.4.7"
 fi
