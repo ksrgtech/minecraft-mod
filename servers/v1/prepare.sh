@@ -72,7 +72,11 @@ function curse_dl() {
 
 function has_child() {
   dir="$1"
-  [[ -d "$dir" && $(find "$dir" -mindepth 1 | wc -l) -gt 0 ]]
+  if [[ -d "$dir" && $(find "$dir" -mindepth 1 | wc -l) -gt 0 ]]; then
+    echo 1
+  else
+    echo 0
+  fi
 }
 
 DIR=run
@@ -103,7 +107,7 @@ fi
 
 cp -r data/common/* run
 if [[ "$install_client" == "1" ]]; then
-  (set +e && has_child "data/client") && cp -r data/client/* run
+  [[ $(has_child "data/client") == 1 ]] && cp -r data/client/* run
 elif [[ "$install_server" == "1" ]]; then
-  (set +e && has_child "data/server") && cp -r data/server/* run
+  [[ $(has_child "data/server") == 1 ]] && cp -r data/server/* run
 fi
