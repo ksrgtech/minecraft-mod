@@ -512,14 +512,6 @@
     }
   },
   {
-    "id": 2497056,
-    "profile": {
-      "single": true,
-      "multi_client": true,
-      "multi_server": true
-    }
-  },
-  {
     "id": 2638317,
     "profile": {
       "single": true,

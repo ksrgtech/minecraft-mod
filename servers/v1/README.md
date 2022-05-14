@@ -87,7 +87,6 @@
 |WanionLib|[1.12.2-2.9](https://www.curseforge.com/minecraft/mc-mods/wanionlib/files/3597087)|MPL 2.0|
 |Wawla|[1.12.2-2.6.275](https://www.curseforge.com/minecraft/mc-mods/wawla/files/2916368)|LGPL 2.1|
 |YARCF|[0.14-1.12.2](https://www.curseforge.com/minecraft/mc-mods/yarcf/files/3310627)|GPLv3|
-|Applied Energistics 2|[rv5-stable-1](https://www.curseforge.com/minecraft/mc-mods/applied-energistics-2/files/2497056)|LGPLv3|
 |Bad Wither No Cookie - Reloaded|[1.12.2-3.3.16](https://www.curseforge.com/minecraft/mc-mods/bad-wither-no-cookie-reloaded/files/2638317)|MIT|
 |compactmachines3|[1.12.2-3.0.18-b278](https://www.curseforge.com/minecraft/mc-mods/compact-machines/files/2707509)|LGPLv3|
 |extrautils2|[1.12-1.9.9](https://www.curseforge.com/minecraft/mc-mods/extra-utilities/files/2678374)|All Rights Reserved|
