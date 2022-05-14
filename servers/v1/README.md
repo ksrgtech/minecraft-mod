@@ -70,7 +70,6 @@
 |OpenModsLib|[1.12.2-0.12.2](https://www.curseforge.com/minecraft/mc-mods/openmodslib/files/2699055)|MIT|ライブラリ|
 |Pam's HarvestCraft|[1.12.2zg](https://www.curseforge.com/minecraft/mc-mods/pams-harvestcraft/files/2904825)|Custom License [redist: allowed]|農業農業作物作物！！|
 |Patchouli|[1.0-23.6](https://www.curseforge.com/minecraft/mc-mods/patchouli/files/3162874)|CC BY-NC-SA 3.0 Unported|QuestBook、か？|
-|Perfect Spawn|[1.12.2-2.1](https://www.curseforge.com/minecraft/mc-mods/perfect-spawn/files/2543507)|LGPLv3|spawn-protectionうざい！！！f\*\*\*!!!
 |PotionFingers|[r1.0-2](https://www.curseforge.com/minecraft/mc-mods/potion-fingers/files/2491881)|WTFPL|
 |Quark|[r1.6-179](https://www.curseforge.com/minecraft/mc-mods/quark/files/2924091)|CC BY-NC-SA 3.0 Unported|
 |RandomThings|[1.12.2-4.2.7.4](https://www.curseforge.com/minecraft/mc-mods/random-things/files/2905241)|MIT|ぼくが
