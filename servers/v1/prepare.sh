@@ -100,16 +100,16 @@ dl "https://github.com/KisaragiEffective/Sakura_mod/releases/download/1.0.8-1.12
 
 curse_dl
 
-cp -r data/common/* run
+cp -r data/common/* "$DIR"
 if [[ "$install_client" == "1" ]]; then
   if [[ $(has_child "data/client") == 1 ]]; then
-    cp -r data/client/* run
+    cp -r data/client/* "$DIR"
   fi
   if [[ $(has_child "local/client") == 1 ]]; then
-    cp -r local/client/* run
+    cp -r local/client/* "$DIR"
   fi
 elif [[ "$install_server" == "1" ]]; then
   if [[ $(has_child "data/server") == 1 ]]; then
-    cp -r data/server/* run
+    cp -r data/server/* "$DIR"
   fi
 fi
