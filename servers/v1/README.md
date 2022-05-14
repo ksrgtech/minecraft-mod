@@ -74,6 +74,7 @@
 |Quark|[r1.6-179](https://www.curseforge.com/minecraft/mc-mods/quark/files/2924091)|CC BY-NC-SA 3.0 Unported|
 |RandomThings|[1.12.2-4.2.7.4](https://www.curseforge.com/minecraft/mc-mods/random-things/files/2905241)|MIT|ぼくが
 |Realistic Terrain Generator|[1.12.2-6.1.0.0-snapshot.2+flavored.ksrg.git-b7769d2dc6d0941922a26090dd1c15328eb4d1d0](https://github.com/KisaragiEffective/publicfile/blob/master/RTG-1.12.2-6.1.0.0-snapshot.2+flavored.ksrg.git-b7769d2dc6d0941922a26090dd1c15328eb4d1d0?raw=true)|GPLv3|
+|RefinedStorage|[1.6.16](https://www.curseforge.com/minecraft/mc-mods/refined-storage/files/2940914)|MIT|AE2をシンプルにしたやつ|
 |RedstoneFlux|[1.12-2.1.1.1-universal](https://www.curseforge.com/minecraft/mc-mods/redstone-flux/files/2920436)|All Rights Reserved|RFだよん|
 |Sakura|[1.0.8-1.12.2+flavored.ksrg.4](https://github.com/KisaragiEffective/Sakura_mod/releases/tag/1.0.8-1.12.2%2Bflavored.ksrg.4)|MIT|「和」|
 |SpawnChecker|[2.7.7.137](https://www.dropbox.com/sh/mlfsx6b3z5ek8wv/AACCf_0tDiPo8fd2rwa0CoEia/SpawnChecker/Minecraft_1.12.x/SpawnChecker-2.7.7.137.jar?dl=1)|All Rights Reserved|湧き潰し|

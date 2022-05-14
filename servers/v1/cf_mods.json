@@ -759,5 +759,14 @@
       "multi_client": true,
       "multi_server": true
     }
+  },
+  {
+    "id": 2940914,
+    "name": "Refined Storage",
+    "profile": {
+      "single": true,
+      "multi_client": true,
+      "multi_server": true
+    }
   }
 ]
