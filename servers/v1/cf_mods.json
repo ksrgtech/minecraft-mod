@@ -761,5 +761,14 @@
       "multi_client": true,
       "multi_server": true
     }
+  },
+  {
+    "id": 2704832,
+    "name": "Mystical Agradditions",
+    "profile": {
+      "single": true,
+      "multi_client": true,
+      "multi_server": true
+    }
   }
 ]
