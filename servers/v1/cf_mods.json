@@ -714,7 +714,7 @@
   {
     "id": 3778428,
     "profile": {
-      "single": true,
+      "single": false,
       "multi_client": false,
       "multi_server": true
     }
@@ -722,7 +722,7 @@
   {
     "id": 3779536,
     "profile": {
-      "single": true,
+      "single": false,
       "multi_client": false,
       "multi_server": true
     }
