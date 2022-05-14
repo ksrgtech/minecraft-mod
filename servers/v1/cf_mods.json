@@ -770,5 +770,14 @@
       "multi_client": true,
       "multi_server": true
     }
+  },
+  {
+    "id": 2915154,
+    "name": "VanillaFix",
+    "profile": {
+      "single": true,
+      "multi_client": true,
+      "multi_server": true
+    }
   }
 ]

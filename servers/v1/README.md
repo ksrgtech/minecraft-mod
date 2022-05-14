@@ -107,6 +107,7 @@
 |twilightforest|[1.12.2-3.11.1021-universal](https://www.curseforge.com/minecraft/mc-mods/the-twilight-forest/files/3051450)|LGPL 2.1|黄昏〜＾|
 |unloader|[1.2.0](https://www.curseforge.com/minecraft/mc-mods/unloader/files/2572528)|MIT|
 |Mystical Agradditions|[1.12.2-1.3.2](curseforge.com/minecraft/mc-mods/mystical-agradditions/files/2704832)|MIT|Tier 6、解禁―|
+|VanillaFix|[1.0.10-154](https://www.curseforge.com/minecraft/mc-mods/vanillafix/files/2915154)|MIT|クラッシュしたよ;;クラッシュレポートはここだよ;;|
 
 ### クライアントのみ
 |なまえ|ばーじょん|らいせんす|めも|
