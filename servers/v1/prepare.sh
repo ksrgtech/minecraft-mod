@@ -105,6 +105,9 @@ if [[ "$install_client" == "1" ]]; then
   if [[ $(has_child "data/client") == 1 ]]; then
     cp -r data/client/* run
   fi
+  if [[ $(has_child "local/client") == 1 ]]; then
+    cp -r local/client/* run
+  fi
 elif [[ "$install_server" == "1" ]]; then
   if [[ $(has_child "data/server") == 1 ]]; then
     cp -r data/server/* run
