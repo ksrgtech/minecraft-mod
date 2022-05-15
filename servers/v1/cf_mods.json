@@ -779,5 +779,14 @@
       "multi_client": true,
       "multi_server": true
     }
+  },
+  {
+    "id": 3045381,
+    "name": "Mixin 0.7-0.8 Compat",
+    "profile": {
+      "single": true,
+      "multi_client": true,
+      "multi_server": true
+    }
   }
 ]
