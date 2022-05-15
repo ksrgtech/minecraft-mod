@@ -23,8 +23,8 @@
     "HILLS",
     "RARE",
     "SPARSE",
-    "HOT",
-    "JUNGLE"
+    "JUNGLE",
+    "HOT"
   ],
   "BiomeManager Entries": {},
   "Spawnable Creatures": [

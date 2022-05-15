@@ -1,6 +1,6 @@
 
 {
-  "ID": 145,
+  "ID": 147,
   "Name": "TofuBuildings",
   "Resource Location": "tofucraft:tofubuilding",
   "Class": "cn.mcmod.tofucraft.world.biome.BiomeTofuBuildings",

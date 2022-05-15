@@ -1,6 +1,6 @@
 
 {
-  "ID": 152,
+  "ID": 154,
   "Name": "TofuRiver",
   "Resource Location": "tofucraft:tofuriver",
   "Class": "cn.mcmod.tofucraft.world.biome.BiomeTofuRiver",
@@ -21,8 +21,8 @@
   "Enable Snow": false,
   "Dictionary Types": [
     "WET",
-    "SWAMP",
     "WATER",
+    "SWAMP",
     "RIVER"
   ],
   "BiomeManager Entries": {},

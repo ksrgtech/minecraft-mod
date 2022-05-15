@@ -20,11 +20,11 @@
   "Enable Rain": false,
   "Enable Snow": false,
   "Dictionary Types": [
-    "DRY",
     "DENSE",
     "SANDY",
+    "HOT",
     "NETHER",
-    "HOT"
+    "DRY"
   ],
   "BiomeManager Entries": {},
   "Spawnable Creatures": [],
@@ -52,12 +52,6 @@
       "Weight": 1,
       "Min Group Count": 4,
       "Max Group Count": 4
-    },
-    {
-      "Entity Class": "net.minecraft.entity.monster.EntityBlaze",
-      "Weight": 5,
-      "Min Group Count": 1,
-      "Max Group Count": 2
     },
     {
       "Entity Class": "vazkii.quark.world.entity.EntityFoxhound",
