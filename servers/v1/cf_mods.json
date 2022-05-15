@@ -704,23 +704,6 @@
     }
   },
   {
-    "id": 3778428,
-    "profile": {
-      "single": false,
-      "multi_client": false,
-      "multi_server": true
-    }
-  },
-  {
-    "id": 3782698,
-    "name": "Xaero's World Map",
-    "profile": {
-      "single": false,
-      "multi_client": false,
-      "multi_server": true
-    }
-  },
-  {
     "id": 2972849,
     "profile": {
       "single": true,
