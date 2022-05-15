@@ -8,4 +8,4 @@ PASSWORD=$(cat the-secret-password-do-not-leak-to-external.txt) /home/mcserver/m
 /usr/lib/jvm/temurin-8-jdk-arm64/bin/java \
        -Xmx10G \
        -Dfml.queryResult=confirm \
-       -jar /home/mcserver/mc/minecraft_server.1.12.2.jar
+       -jar /home/mcserver/mc/server.jar
