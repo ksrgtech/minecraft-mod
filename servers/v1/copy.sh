@@ -1,5 +1,14 @@
 #!/bin/bash
 
+function has_child() {
+  dir="$1"
+  if [[ -d "$dir" && $(find "$dir" -mindepth 1 | wc -l) -gt 0 ]]; then
+    echo 1
+  else
+    echo 0
+  fi
+}
+
 readonly install_server="$([[ "$PROFILE" == "multi_server" || "$PROFILE" == "single" ]] && echo "1" || echo "0")";
 readonly install_client="$([[ "$PROFILE" == "multi_client" || "$PROFILE" == "single" ]] && echo "1" || echo "0")";
 

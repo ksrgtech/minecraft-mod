@@ -70,15 +70,6 @@ function curse_dl() {
   rm "$x"
 }
 
-function has_child() {
-  dir="$1"
-  if [[ -d "$dir" && $(find "$dir" -mindepth 1 | wc -l) -gt 0 ]]; then
-    echo 1
-  else
-    echo 0
-  fi
-}
-
 DIR=run
 MOD_DIR=$DIR/mods
 
@@ -97,4 +88,4 @@ dl "https://github.com/KisaragiEffective/Sakura_mod/releases/download/1.0.8-1.12
 
 curse_dl
 
-PROFILE="$PROFILE" ./copy.sh
+PROFILE="$PROFILE" DIR="$DIR" ./copy.sh
