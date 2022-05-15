@@ -3,7 +3,7 @@
 
 set -x
 function die() {
-  echo "$*"
+  echo "$(tput setab 1)$(tput setaf 15)$*$(tput init)"
   exit 1
 }
 
@@ -12,8 +12,7 @@ function pre_execute() {
   mkdir -p $MOD_DIR
   [ -z "$DIR" ] && die "\$DIR can not be empty"
   [ ! -d "$DIR" ] && mkdir -p "$DIR"
-  [[ "$SERVER" == "" && "$CLIENT" == "" ]] && die "You must specify \$SERVER or \$CLIENT"
-  [[ "$SERVER" == "1" && "$CLIENT" == "1" ]] && die "You must not specify both \$SERVER and \$CLIENT"
+  [[ "$PROFILE" != "multi_server" && "$PROFILE" != "multi_client" && "$PROFILE" != "single" ]] && die "You must specify one of 'multi_server', 'multi_client' or 'single' in \$PROFILE"
 
   if [ -z "$CURSE_API_KEY" ]; then
     die "CFCore token must be provided via \$CURSE_API_KEY. Please get it from https://console.curseforge.com"
@@ -26,42 +25,58 @@ function dl() {
   URL="$1"
   FILE="$2"
   echo "Downloading $URL as $FILE"
-  curl -Lso "$MOD_DIR/$FILE.jar" "$URL"
+  if [[ "$DRYRUN" == "" ]]; then
+    curl -Lso "$MOD_DIR/$FILE.jar" "$URL"
+  fi
+}
+
+function echo-bar() {
+  echo "-------------------------------------------------------"
 }
 
 function curse_dl() {
   set -e
   local x
   x=$(mktemp)
-  local file
-  if [[ "$SERVER" == "1" ]]; then
-    file="cf_mods_server.json"
-  elif [[ "$CLIENT" == "1" ]]; then
-    file="cf_mods_client.json"
-  fi
   # ✝✝✝!!!META-PROGRAMMING!!!✝✝✝
   # shellcheck disable=SC2016
-  curl \
+  jq --arg profile "$PROFILE" '{"fileIds": [.[] | select(.profile[$profile] == true) | .id]}' cf_mods.json \
+    | curl \
       -q \
       -X POST \
       -H "Accept: application/json" \
       -H "Content-Type: application/json" \
       -H "x-api-key: $CURSE_API_KEY" \
-      -d@$file \
+      -d@- \
       https://api.curseforge.com/v1/mods/files \
     | jq \
       -r \
       --arg curse $CURSE_API_KEY \
       --arg dir $MOD_DIR \
-      '.data[] | {fileId: .id, modId, fileName} | ("curl -qf -H \"Accept: application/json\" -H \u0027x-api-key: " + $curse + "\u0027 " + "https://api.curseforge.com/v1/mods/" + (.modId | tostring) + "/files/" + (.fileId | tostring) + "/download-url" + " | " + "jq -r \u0027.data\u0027" + " | " + "tr -d \u0027\\n\u0027" + " | " + "xargs -P -0 -i wget {} -O \"" + $dir + "/" + .fileName + "\"")' \
+      '.data[] | {fileId: .id, modId, fileName} | ("curl -qf -H \"Accept: application/json\" -H \u0027x-api-key: " + $curse + "\u0027 " + "https://api.curseforge.com/v1/mods/" + (.modId | tostring) + "/files/" + (.fileId | tostring) + "/download-url" + " | " + "wget \"$(jq -r \u0027.data\u0027 | tr -d \"\\n\")\" -O \"" + $dir + "/" + (.fileName | gsub("\u0027"; "")) + "\"")' \
     | tee "$x" >/dev/null # Yeah, this is a security risk
   chmod +x "$x"
   # syntax validation
   /bin/bash -n "$x"
-  $x
-  ls run/mods
-  file run/mods/*.jar
+  echo "Install script:"
+  echo-bar
+  cat "$x"
+  echo-bar
+  if [[ "$DRYRUN" == "" ]]; then
+    $x
+    ls run/mods
+    file run/mods/*.jar
+  fi
   rm "$x"
+}
+
+function has_child() {
+  dir="$1"
+  if [[ -d "$dir" && $(find "$dir" -mindepth 1 | wc -l) -gt 0 ]]; then
+    echo 1
+  else
+    echo 0
+  fi
 }
 
 DIR=run
@@ -69,17 +84,32 @@ MOD_DIR=$DIR/mods
 
 pre_execute
 
-if [[ "$CLIENT" == "1" ]]; then
-  dl "https://optifine.net/downloadx?f=OptiFine_1.12.2_HD_U_G5.jar&x=79875e46fbbc1166cb1d14b96c5a684a" "OptiFine_1.12.2_HD_U_G5"
+readonly install_server="$([[ "$PROFILE" == "multi_server" || "$PROFILE" == "single" ]] && echo "1" || echo "0")";
+readonly install_client="$([[ "$PROFILE" == "multi_client" || "$PROFILE" == "single" ]] && echo "1" || echo "0")";
+
+# NOTE: OptiFine is not auto-installable.
+if [[ "$PROFILE" == "multi_server" ]]; then
+  # see #23
+  dl "https://repo.spongepowered.org/repository/maven-releases/org/spongepowered/spongeforge/1.12.2-2838-7.4.7/spongeforge-1.12.2-2838-7.4.7.jar" "spongeforge-1.12.2-2838-7.4.7"
 fi
 
 dl "https://www.dropbox.com/sh/mlfsx6b3z5ek8wv/AACCf_0tDiPo8fd2rwa0CoEia/SpawnChecker/Minecraft_1.12.x/SpawnChecker-2.7.7.137.jar?dl=1" "SpawnChecker-2.7.7.137"
 dl "https://web.archive.org/web/20190715131820/https://forum.minecraftuser.jp/download/file.php?id=75930" "StorageBox-3.2.0"
 dl "https://github.com/KisaragiEffective/publicfile/blob/master/RTG-1.12.2-6.1.0.0-snapshot.2+flavored.ksrg.git-b7769d2dc6d0941922a26090dd1c15328eb4d1d0?raw=true" "RTG-1.12.2-6.1.0.0-snapshot.2+flavored.ksrg.git-b7769d2dc6d0941922a26090dd1c15328eb4d1d0"
+dl "https://github.com/KisaragiEffective/Sakura_mod/releases/download/1.0.8-1.12.2%2Bflavored.ksrg.4/Sakura-1.0.8-1.12.2+flavored.ksrg.4.jar" "Sakura-1.0.8-1.12.2+flavored.ksrg.4"
+
 curse_dl
 
-if [[ "$CLIENT" == "1" ]]; then
-  [ -d "client" ] && cp client/* run
-elif [[ "$SERVER" == "1" ]]; then
-  [ -d "server" ] && cp server/* run
+cp -r data/common/* "$DIR"
+if [[ "$install_client" == "1" ]]; then
+  if [[ $(has_child "data/client") == 1 ]]; then
+    cp -r data/client/* "$DIR"
+  fi
+  if [[ $(has_child "local/client") == 1 ]]; then
+    cp -r local/client/* "$DIR"
+  fi
+elif [[ "$install_server" == "1" ]]; then
+  if [[ $(has_child "data/server") == 1 ]]; then
+    cp -r data/server/* "$DIR"
+  fi
 fi

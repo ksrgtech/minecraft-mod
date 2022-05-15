@@ -1,0 +1,79 @@
+
+{
+  "ID": 150,
+  "Name": "TofuForestHills",
+  "Resource Location": "tofucraft:tofuforest_hills",
+  "Class": "cn.mcmod.tofucraft.world.biome.BiomeTofuForest",
+  "Root Height": 0.3,
+  "Height Variation": 0.7,
+  "Top Block": "tofucraft:tofu_terrain",
+  "Filler Block": "tofucraft:tofu_terrain",
+  "Ocean Top Block": "Disabled. Activate in BiomeTweakerCore.",
+  "Ocean Filler Block": "Disabled. Activate in BiomeTweakerCore.",
+  "Actual Filler Blocks": "Disabled. Activate in BiomeTweakerCore.",
+  "Grass Color": "Disabled. Activate in BiomeTweakerCore.",
+  "Foliage Color": "Disabled. Activate in BiomeTweakerCore.",
+  "Water Color": "9286496",
+  "Temperature": 0.475,
+  "Humidity": 0.969,
+  "Water Tint": 9286496,
+  "Enable Rain": true,
+  "Enable Snow": false,
+  "Dictionary Types": [
+    "HILLS",
+    "WET"
+  ],
+  "BiomeManager Entries": {},
+  "Spawnable Creatures": [
+    {
+      "Entity Class": "cn.mcmod.tofucraft.entity.EntityTofuCow",
+      "Weight": 3,
+      "Min Group Count": 4,
+      "Max Group Count": 4
+    }
+  ],
+  "Spawnable Monsters": [
+    {
+      "Entity Class": "cn.mcmod.tofucraft.entity.EntityTofuSlime",
+      "Weight": 4,
+      "Min Group Count": 2,
+      "Max Group Count": 3
+    },
+    {
+      "Entity Class": "cn.mcmod.tofucraft.entity.EntityTofuSpider",
+      "Weight": 2,
+      "Min Group Count": 1,
+      "Max Group Count": 2
+    },
+    {
+      "Entity Class": "cn.mcmod.tofucraft.entity.EntityTofuChinger",
+      "Weight": 1,
+      "Min Group Count": 1,
+      "Max Group Count": 2
+    }
+  ],
+  "Spawnable Water Creatures": [],
+  "Spawnable Cave Creatures": [],
+  "Spawn Biome": false,
+  "Tweaked": false,
+  "BOP Generators": {
+    "FLOWERS Generators": [
+      {
+        "ID": "flora",
+        "Name": "glowshrooms"
+      },
+      {
+        "ID": "flora",
+        "Name": "miners_delight"
+      },
+      {
+        "ID": "flora",
+        "Name": "roots"
+      }
+    ]
+  },
+  "BOP Owner": "OTHER",
+  "BOP Weight Map": {},
+  "BOP Climate Weights": {},
+  "BOP Island Weight": 0
+}
