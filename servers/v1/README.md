@@ -113,10 +113,13 @@
 |なまえ|ばーじょん|らいせんす|めも|
 |:---|:---|:---|:---|
 |[controlling](https://www.curseforge.com/minecraft/mc-mods/controlling)|[3.0.10](https://www.curseforge.com/minecraft/mc-mods/controlling/files/3025548)|MIT|キー割当プリセット|
+|xaero-map-null-potion|1.0.2|MIT|Xaero's Mapがサーバーに入れてくれない問題を解決するためのダミーMOD。<br>Xaero's Mapを入れるときは抜くこと！|
 
 ### サーバーのみ
 |なまえ|ばーじょん|らいせんす|めも|
 |:---|:---|:---|:---|
+|[Xaero's Minimap](https://www.curseforge.com/minecraft/mc-mods/xaeros-minimap)|[22.7.0](https://www.curseforge.com/minecraft/mc-mods/xaeros-minimap/files/3778428)|Custom License [inclusion: allowed]|Xaero's Minimapの機能をフル解禁|
+|[Xaero's World Map](https://www.curseforge.com/minecraft/mc-mods/controlling/files)|[1.21.2](https://www.curseforge.com/minecraft/mc-mods/xaeros-world-map/files/3782698)|Custom License [inclusion: allowed]|Xaero's Minimapの機能をフル解禁|
 |[SpongeForge](https://spongepowered.org/downloads/spongeforge)|[1.12.2-2838-7.4.7](https://spongepowered.org/downloads/spongeforge)| [MIT License](https://github.com/SpongePowered/SpongeForge/blob/stable-7/LICENSE.txt) |Velocityからのプレイヤーデータ中継用|
 
 ## テスト
