@@ -113,6 +113,7 @@
 |なまえ|ばーじょん|らいせんす|めも|
 |:---|:---|:---|:---|
 |[controlling](https://www.curseforge.com/minecraft/mc-mods/controlling)|[3.0.10](https://www.curseforge.com/minecraft/mc-mods/controlling/files/3025548)|MIT|キー割当プリセット|
+|xaero-map-null-potion|1.0.2|MIT|Xaero's Mapがサーバーに入れてくれない問題を解決するためのダミーMOD。<br>Xaero's Mapを入れるときは抜くこと！|
 
 ### サーバーのみ
 |なまえ|ばーじょん|らいせんす|めも|
