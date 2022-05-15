@@ -1,0 +1,18 @@
+[Unit]
+Description=Minecraft Server
+After=network-online.target
+
+[Service]
+User=mcserver
+Group=mcserver
+TimeoutStopSec=120
+WorkingDirectory=/home/mcserver/mc
+# shellscript must be executed on the screen(1)
+ExecStart=/usr/bin/screen -Dm -S mc /home/mcserver/mc/start.sh
+
+ExecStop=/usr/bin/screen -S mc -X stuff "save-all\015"
+ExecStop=/usr/bin/screen -S mc -X stuff "stop\015"
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
