@@ -1,4 +1,4 @@
 #!/bin/bash
 
 file="$1"
-gpg --decrypt "$file"
+echo "$PASSWORD" | gpg --batch --yes --passphrase-fd 0 --decrypt "$file"
