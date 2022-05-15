@@ -707,7 +707,7 @@
     "id": 2972849,
     "profile": {
       "single": true,
-      "multi_client": false,
+      "multi_client": true,
       "multi_server": true
     }
   },
