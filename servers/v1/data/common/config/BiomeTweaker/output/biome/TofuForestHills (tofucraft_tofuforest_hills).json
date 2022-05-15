@@ -1,6 +1,6 @@
 
 {
-  "ID": 147,
+  "ID": 150,
   "Name": "TofuForestHills",
   "Resource Location": "tofucraft:tofuforest_hills",
   "Class": "cn.mcmod.tofucraft.world.biome.BiomeTofuForest",
@@ -20,8 +20,8 @@
   "Enable Rain": true,
   "Enable Snow": false,
   "Dictionary Types": [
-    "WET",
-    "HILLS"
+    "HILLS",
+    "WET"
   ],
   "BiomeManager Entries": {},
   "Spawnable Creatures": [
