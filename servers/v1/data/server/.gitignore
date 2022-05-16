@@ -11,6 +11,7 @@ libraries
 logs
 usercache.json
 usernamecache.json
+FAILFLAG
 
 # secret
 banned-ips.json
