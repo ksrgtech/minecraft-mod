@@ -1,4 +1,10 @@
 #!/bin/bash
+
+if [[ -f "FAILFLAG" ]]; then
+  echo "FLAG!!" >&2
+  exit 1
+fi
+
 readonly SERVERDIR=`dirname $0`
 
 cd ${SERVERDIR}
