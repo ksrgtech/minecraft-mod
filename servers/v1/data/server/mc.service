@@ -5,13 +5,17 @@ After=network-online.target
 [Service]
 User=mcserver
 Group=mcserver
-TimeoutStopSec=120
+TimeoutStopSec=1200
 WorkingDirectory=/home/mcserver/mc
 # shellscript must be executed on the screen(1)
 ExecStart=/usr/bin/screen -Dm -S mc /home/mcserver/mc/start.sh
 
+ExecStop=/usr/bin/screen -S mc -X stuff "say サーバーからの停止信号を受信しました。セーブしています。電源を切らないでください。\015"
 ExecStop=/usr/bin/screen -S mc -X stuff "save-all\015"
+ExecStop=/usr/bin/screen -S mc -X stuff "say セーブが完了しました。サーバーを停止しています。\015"
 ExecStop=/usr/bin/screen -S mc -X stuff "stop\015"
+ExecStop=sleep 1200
+
 Restart=always
 
 [Install]
