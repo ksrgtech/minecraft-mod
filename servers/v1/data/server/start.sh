@@ -9,7 +9,8 @@ readonly SERVERDIR=`dirname $0`
 
 cd ${SERVERDIR}
 
-PASSWORD=$(cat the-secret-password-do-not-leak-to-external.txt)
+# shellcheck disable=SC2155
+export PASSWORD=$(cat the-secret-password-do-not-leak-to-external.txt)
 /home/mcserver/mc/decrypt.sh whitelist.json.asc > whitelist.json
 /home/mcserver/mc/decrypt.sh discord-webhook.url.asc > discord-webhook.url
 
