@@ -26,18 +26,18 @@ import mods.jei.JEI.removeAndHide as rh;
 	mods.avaritia.ExtremeCrafting.remove(<avaritia:infinity_hoe>);
 
 # singularitys
-	mods.avaritia.Compressor.add("0",<avaritia:singularity>, 1000, <ore:ingotIron>, true);
-	mods.avaritia.Compressor.add("1",<avaritia:singularity:1>, 1000, <ore:ingotGold>, true);
-	mods.avaritia.Compressor.add("2",<avaritia:singularity:2>, 1000, <ore:gemLapis>, true);
-	mods.avaritia.Compressor.add("3",<avaritia:singularity:3>, 1000, <ore:dustRedstone>, true);
-	mods.avaritia.Compressor.add("4",<avaritia:singularity:4>, 1000, <minecraft:quartz>, true);
-	mods.avaritia.Compressor.add("5",<avaritia:singularity:5>, 1000, <ore:ingotCopper>, true);
-	mods.avaritia.Compressor.add("6",<avaritia:singularity:6>, 1000, <ore:ingotTin>, true);
-	mods.avaritia.Compressor.add("7",<avaritia:singularity:7>, 1000, <ore:ingotLead>, true);
-	mods.avaritia.Compressor.add("8",<avaritia:singularity:8>, 1000, <ore:ingotSilver>, true);
-	mods.avaritia.Compressor.add("9",<avaritia:singularity:9>, 1000, <ore:ingotNickel>, true);
-	mods.avaritia.Compressor.add("10",<avaritia:singularity:10>, 1000, <ore:gemDiamond>, true);
-	mods.avaritia.Compressor.add("11",<avaritia:singularity:11>, 1000, <ore:gemEmerald>, true);
+	mods.avaritia.Compressor.add("0",<avaritia:singularity>, 5000, <ore:ingotIron>, true);
+	mods.avaritia.Compressor.add("1",<avaritia:singularity:1>, 5000, <ore:ingotGold>, true);
+	mods.avaritia.Compressor.add("2",<avaritia:singularity:2>, 5000, <ore:gemLapis>, true);
+	mods.avaritia.Compressor.add("3",<avaritia:singularity:3>, 5000, <ore:dustRedstone>, true);
+	mods.avaritia.Compressor.add("4",<avaritia:singularity:4>, 5000, <minecraft:quartz>, true);
+	mods.avaritia.Compressor.add("5",<avaritia:singularity:5>, 5000, <ore:ingotCopper>, true);
+	mods.avaritia.Compressor.add("6",<avaritia:singularity:6>, 5000, <ore:ingotTin>, true);
+	mods.avaritia.Compressor.add("7",<avaritia:singularity:7>, 5000, <ore:ingotLead>, true);
+	mods.avaritia.Compressor.add("8",<avaritia:singularity:8>, 5000, <ore:ingotSilver>, true);
+	mods.avaritia.Compressor.add("9",<avaritia:singularity:9>, 5000, <ore:ingotNickel>, true);
+	mods.avaritia.Compressor.add("10",<avaritia:singularity:10>, 5000, <ore:gemDiamond>, true);
+	mods.avaritia.Compressor.add("11",<avaritia:singularity:11>, 5000, <ore:gemEmerald>, true);
 
 # Infinity Catalyst
 	mods.avaritia.ExtremeCrafting.remove(<avaritia:resource:5>);
