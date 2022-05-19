@@ -118,6 +118,7 @@
 ### サーバーのみ
 |なまえ|ばーじょん|らいせんす|めも|
 |:---|:---|:---|:---|
+|Aroma Backup|[1.12.2-2.1.1.4](https://www.curseforge.com/minecraft/mc-mods/aromabackup/files/2586524)|Custom License [inclusion: allowed]|自動バックアップ|
 |[Xaero's Minimap](https://www.curseforge.com/minecraft/mc-mods/xaeros-minimap)|[22.7.0](https://www.curseforge.com/minecraft/mc-mods/xaeros-minimap/files/3778428)|Custom License [inclusion: allowed]|Xaero's Minimapの機能をフル解禁|
 |[Xaero's World Map](https://www.curseforge.com/minecraft/mc-mods/controlling/files)|[1.21.2](https://www.curseforge.com/minecraft/mc-mods/xaeros-world-map/files/3782698)|Custom License [inclusion: allowed]|Xaero's Minimapの機能をフル解禁|
 |[SpongeForge](https://spongepowered.org/downloads/spongeforge)|[1.12.2-2838-7.4.7](https://spongepowered.org/downloads/spongeforge)| [MIT License](https://github.com/SpongePowered/SpongeForge/blob/stable-7/LICENSE.txt) |Velocityからのプレイヤーデータ中継用|
