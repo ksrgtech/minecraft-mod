@@ -788,5 +788,14 @@
       "multi_client": true,
       "multi_server": true
     }
+  },
+  {
+    "id": 2586524,
+    "name": "AromaBackup",
+    "profile": {
+      "single": false,
+      "multi_client": false,
+      "multi_server": true
+    }
   }
 ]
