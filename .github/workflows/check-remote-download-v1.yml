@@ -38,7 +38,7 @@ on:
     paths:
       - servers/v1/cf_mods.json
       - servers/v1/prepare.sh
-      - .github/workflows/check-remote-download.yml
+      - .github/workflows/check-remote-download-v1.yml
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
